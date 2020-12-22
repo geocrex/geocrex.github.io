@@ -1,8 +1,7 @@
 body {
-  background-image: url("/untitled folder/wall_paper.png");
+  background-image: url("/untitled_folder/wall_paper.png");
   background-repeat: repeat;
   background-attachment: fixed;
-  background-size: cover;
   background-color: black;
   color: white;
   font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
