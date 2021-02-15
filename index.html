@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>geocrex</title>
+    <title>crexesis</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
@@ -13,9 +13,22 @@
       padding: 25px;
       width: 225px;
       float: center;
-      background-color: #222E50; 
+      background-color: #1f2a4a; 
       border: 0.5px dashed white;
       text-align: center;
+    }
+    .goingright {
+      width: 135px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .goingright p {
+      display: inline-block;
+      animation: marquee1 10s linear infinite;
+    }
+    @keyframes marquee1 {
+      0%   { transform:translateX(-100%); }
+      100%   { transform:translateX(100%); }
     }
     </style>
   </head>
@@ -24,19 +37,27 @@
     <center>
     
     <br><br>  
-    <p style = "font-size:30px;transform: scaleY(0.82);"><b>geocrex</b></p>
-    </div>
+    <p style = "font-size:30px;transform: scaleY(0.82);"><b>crexesis</b></p>
 
     <div class="myDiv">
-    <p>hey i'm georgios thanks for visiting my website
-    <br> <br>
-    eventually you'll be able to see a bunch of things that i've made on here so enjoy!! once i do do that.
-    <br>
-    </p>
+      <p>hey i'm georgios thanks for visiting my website
+      <br> <br>
+      eventually you'll be able to see a bunch of things that i've made on here
+      <br>
+      </p>
     </div>
+    
+    <br>
+    
+    <div class="goingright">
+      <p>hello this is a thing now</p>
+    </div>
+    
+    <br>
+    <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
     <br>
     <br>
-    <p style = "font-size:12px;">started 22 december 2020</footer></p>
+    <p style = "font-size:12px;">started 13 feb 2021</p>
     </center>
   </body>
 </html>
