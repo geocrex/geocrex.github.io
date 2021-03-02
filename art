@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>art</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    a {
+      color: white;
+    }
+    a:visited {
+      color: #dae1e3;
+    }
+    a:hover, a:active, a:focus {
+      color: white;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      text-align: left;
+    }
+  </style>
+  </head>
+  <body>
+  
+    <center>
+    
+    <br>
+      <p><a href="navigation.html">< back</p></a>
+    <p style = "font-size:30px;transform: scaleY(0.82);"><b>art</b></p>
+    <br>
+    <p>from 2021 onwards, because other than that it's a bit of a mess around different hard drives and around the internet so. here you go!</p>
+    <p>date format: day/month/year</p>
+    <p><a href="twitter.com/crexidite">art twitter</p></a>
+    <div style="img">
+      <img src = "funny-yoshi.png">
+      <br>
+      funny yoshi - 1/3/21
+    </div>
+    <br><br>
+    <div style="img">
+      <img src = "kindlefirey.png">
+      <br>
+      kindle firey - 24/2/21
+    </div>
+    </center>
+  </body>
+</html>
