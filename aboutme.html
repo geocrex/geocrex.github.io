@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <style>
+    a {
+      color: white;
+    }
+    a:visited {
+      color: white;
+    }
+    a:hover, a:active, a:focus {
+      color: white;
+    }
+    .myDiv {
+      padding: 15px;
+      max-width: 600px;
+      float: center;
+      background-color: white; 
+      text-align: center;
+      text-color: black;
+    }
+    .leftDiv {
+      padding: 15px;
+      max-width: 300px;
+      float: left;
+      background-color: white; 
+      text-align: left;
+      text-color: black;
+    }
+    .rightDiv {
+      padding: 15px;
+      max-width: 300px;
+      float: right;
+      background-color: white; 
+      text-align: left;
+      text-color: black;
+    }
+    .goingright {
+      width: 225px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .goingright p {
+      display: inline-block;
+      animation: marquee1 10s linear infinite;
+    }
+    @keyframes marquee1 {
+      0%   { transform:translateX(-100%); }
+      100%   { transform:translateX(100%); }
+    }
+    .goingrightslow {
+      width: 225px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .goingrightslow p {
+      display: inline-block;
+      animation: marquee1 20s linear infinite;
+    }
+    @keyframes marquee1 {
+      0%   { transform:translateX(-100%); }
+      100%   { transform:translateX(100%); }
+    }
+    </style>
+  </head>
+  <body>
+  
+    <center>
+    
+    <br><br>  
+    <p style = "font-size:30px;transform: scaleY(0.82);"><b>about me</b></p>
+    <br>
+    <div class="myDiv">
+      <img src="twitter_1612107687.jpg">
+      <br>
+      <p>hey!<p>
+      <br> <br>
+      <div class="leftDiv">
+        <p>sample text
+          <br>
+          sample text<br>
+      </div>
+      <div class="rightDiv">
+        <p>sample text
+          <br>
+          sample text<br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </center>
+  </body>
+</html>
