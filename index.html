@@ -19,15 +19,18 @@
     <style>
     a {
       color: white;
+      text-decoration: none;
     }
     a:visited {
       color: white;
+      text-decoration: none;
     }
     a:hover, a:active, a:focus {
       color: white;
+      text-decoration: none;
     }
     .myDiv {
-      padding: 18px 32px 18px;
+      padding: 12px 28px 11px;
       max-width: 225px;
       float: center;
       background-color: #061029; 
@@ -43,11 +46,11 @@
     }
     .goingright p {
       display: inline-block;
-      animation: marquee1 10s linear infinite;
+      animation: marquee1 8s linear infinite;
       animation-delay: 0s;
     }
     @keyframes marquee1 {
-      0%   { transform:translateX(-203px); }
+      0%   { transform:translateX(-268px); }
       100%   { transform:translateX(285px); }
     }
     .content {
@@ -61,14 +64,15 @@
     img {
       display: flex;
       justify-content: center;
+      float:center;
       padding: 0;
       max-width: 225px;
       height: auto;
     }
     .featured {
-      padding: 15px 30px;
+      padding: 8px 25px 8px;
       max-width: 225px;
-      float: center;
+      overflow:hidden;
       background-color: #0a183d;
       border: 3px dotted #677cb5;
       text-align: center;
@@ -78,55 +82,107 @@
       display: flex;
       justify-content: center;
       padding: 0;
-      width: 225px;
+      width: 100%;
       height: auto;
+    }
+    .myDiv2 {
+      padding: 18px 40px 18px;
+      float: left;
+      max-width: 225px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .allDiv {
+      max-width: 650px;
+      display:flex;
+      flex-wrap:wrap;
+      float: center;
+      overflow:hidden;
+      justify-content: center;
+    }
+    @media screen and (max-width: 500px) {
+      .flex-direction {
+         flex-direction:column;
+      }
+      .myDiv2 {
+        max-width:225px;
+        height:auto;
+        border-right:none;
+      }
+      .featured {
+        max-width:225px;
+        height:auto;
+      }
+      .featured span {
+        line-height:107px;
+      }
+
     }
     </style>
   </head>
   <body>
     <center>
-    <br><br>
-    
+    <br>
+    <br>
     <div class="content">
     <main>
-    <p style = "font-size:30px;transform: scaleY(0.82);"><b>crexesis</b></p>
-    <div class="myDiv">
-      <p>hey thanks for visiting my website
+    <p style="font-size:30px;transform: scaleY(0.82);"><b>home</b></p>
+    <div>
+      <p class="myDiv">
+        <br>
+        hey thanks for visiting my website
         <br>
         <br>
         this is basically just a dump for things that i've made that i'd consider kind of significant and then i tried to make it look nice
-        <br><br>
-        - - - - - - - - - - - - - - - - - - - - -
-        <br><br>
-        ( click the globe to enter )
-      </p>
+        <br>
+        <br>
+        </p>
     </div>
-    <br>
-      
-    <br><br><br><br>
-    <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
-    <br><br><br>
-    
     <div class="goingright">
-      <p>WEBSITE DONE!!!!!</p>
+      <p>nevermind, overhauled home page</p>
     </div>
-    
-    <br><br><br><br><br><br><br><br><br><br>
-    
-    <p><b>----------<br>featured<br>----------</b></p>
+     <br>
+      <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
+      <br><p style="font-size:14px;">( click to go to navigation )</p>
+    <br>  
+    <br>
+  <div class="allDiv">
+    <div class="myDiv2">
+        <p><b>accounts / contact</b></p>
+        <p><a href="https://twitter.com/crexesis">🕊 &nbsp;twitter</a></p>
+        <p><a href="https://www.youtube.com/channel/UC4Pslhgm2AeEEeVCWmiqVOA/">📺 &nbsp;youtube</a></p>
+        <p><a href="https://pizzacube.newgrounds.com">🌐 &nbsp;newgrounds</a></p>
+        <p><a href="https://curiouscat.qa/crex">❓ &nbsp;curiouscat</a></p>
+        <p><a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa">🎧 &nbsp;spotify</a></p>
+        <p>💬 &nbsp;discord: crex#3651</p>
+        <br>
+    </div>
     <div class="featured">
-      <a href="tips/googletranspng.html"><p>how to make sure you get an actual transparent png image and not just a fake jpg one on google</p></a>
+      <p>
+        <b>----------<br>featured<br>----------</b>
+      </p>
+      <a href="tips/googletranspng.html"><p style="text-decoration:underline;">how to make sure you get an actual transparent png image and not just a fake jpg one on google</p></a>
       <br>
       <div class="featured-img">
-        <a href="wallpapers/Swirls Light.png"><img src="/wallpapers/Swirls Light.png"></a>
+        <a href="/wallpapers/Swirls Light.png"><img src="/wallpapers/Swirls Light.png"></a>
+      </div>
+      <br>
+      <div class="featured-img">
+        <a href="/art 2021/tankman.png"><img src="/art 2021/tankman.png"></a>
       </div>
       <br>
     </div>
+  </div>
     </main>
     <br>
     <br>
     <br>
-      <footer><p style="font-size:12px;">started 13 feb 2021</p></footer>
+    <br>
+    <br>
+    <footer>
+      <p style="font-size:12px;">started 13 feb 2021</p>
+      <p style="font-size:12px;">last updated 7 apr 2021</p>
+    </footer>
     </div>
     </center>
   </body>
