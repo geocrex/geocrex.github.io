@@ -48,6 +48,71 @@
     body {
       background-image: url("/special-backgrounds/art_bg.png");
     }
+    .content {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      float:center;
+      padding: 0;
+      max-width: 225px;
+      height: auto;
+    }
+    .rightdiv {
+      padding: 8px 25px 8px;
+      max-width: 450px;
+      overflow:hidden;
+      background-color: #0a183d;
+      border: 3px dotted #677cb5;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .rightdiv-img {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+    .myDiv2 {
+      padding: 18px 40px 18px;
+      float: left;
+      max-width: 450px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .allDiv {
+      max-width: 650px;
+      display:flex;
+      flex-wrap:wrap;
+      float: center;
+      overflow:hidden;
+      justify-content: center;
+    }
+    @media screen and (max-width: 500px) {
+      .flex-direction {
+         flex-direction:column;
+      }
+      .myDiv2 {
+        max-width:450px;
+        height:auto;
+        border-right:none;
+      }
+      .rightdiv {
+        max-width:450px;
+        height:auto;
+      }
+      .rightdiv span {
+        line-height:107px;
+      }
+
+    }
   </style>
   </head>
   <body>
@@ -63,38 +128,48 @@
     <p>( click images to see full resolution )</p>
     <br>
     <!-- art begins -->
-    <div class="myDiv">
-      <a href="/art 2021/tankman.png">
-        <img src="/art 2021/tankman.png">
-      </a>
-      <br>
-      tankman - 3 apr 2021
-    </div>
+    <div class="allDiv">
+     <div class="myDiv2">
+      <div class="myDiv">
+        <a href="/art 2021/tankman.png">
+          <img src="/art 2021/tankman.png">
+        </a>
+        <br>
+        tankman - 3 apr 2021
+      </div>
       <!-- art ends -->
       <br>
       <br>
       <br>
       <!-- different art -->
-    <div class="myDiv">
-      <a href="/art 2021/funny-yoshi.jpg">
-        <img src="/art 2021/funny-yoshi.jpg">
-      </a>
-      <br>
-      funny yoshi - 1 mar 2021
-    </div>
+      <div class="myDiv">
+        <a href="/art 2021/kindlefirey.jpg">
+          <img src="/art 2021/kindlefirey.jpg">
+        </a>
+        <br>
+        kindle firey - 24 feb 2021
+      </div>
       <!-- art ends -->
       <br>
       <br>
       <br>
-      <!-- different art -->
-    <div class="myDiv">
-      <a href="/art 2021/kindlefirey.jpg">
-        <img src="/art 2021/kindlefirey.jpg">
-      </a>
-      <br>
-      kindle firey - 24 feb 2021
-    </div>
+     </div>
+    <!-- different art -->
+     <div class="rightdiv">
+      <div class="myDiv">
+        <a href="/art 2021/funny-yoshi.jpg">
+          <img src="/art 2021/funny-yoshi.jpg">
+        </a>
+        <br>
+        funny yoshi - 1 mar 2021
+      </div>
       <!-- art ends -->
+      <br>
+      <br>
+      <br>
+     </div>
+    </div>
+    <!-- art ends -->
     <br>
     <br>
     <br>
