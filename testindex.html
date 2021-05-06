@@ -15,8 +15,7 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
-    <style>
-    a {
+    <style>    a {
       color: white;
       text-decoration: none;
     }
@@ -38,7 +37,7 @@
       border-radius: 10px;
     }
     .goingright {
-      max-width: 285px;
+      max-width: 225px;
       white-space: nowrap;
       overflow: hidden;
       animation-delay: 0s;
@@ -69,7 +68,7 @@
       height: auto;
     }
     .featured {
-      padding: 8px 25px 8px;
+      padding: 16px 32px 16px;
       max-width: 225px;
       overflow:hidden;
       background-color: #0a183d;
@@ -85,6 +84,13 @@
       height: auto;
     }
     .myDiv2 {
+      padding: 15px 55px 20px 54px;
+      float: center;
+      max-width: 225px;
+      text-align: center;
+      border: 0px dotted #677cb5;
+    }
+    .myDiv3 {
       padding: 18px 40px 18px;
       float: left;
       max-width: 225px;
@@ -92,18 +98,24 @@
       border-radius: 10px;
     }
     .allDiv {
-      max-width: 650px;
+      max-width: 1600px;
       display:flex;
       flex-wrap:wrap;
-      float: center;
+      float:center;
       overflow:hidden;
       justify-content: center;
+      padding: 0;
     }
     @media screen and (max-width: 500px) {
       .flex-direction {
          flex-direction:column;
       }
       .myDiv2 {
+        max-width:225px;
+        height:auto;
+        border-right:none;
+      }
+      .myDiv3 {
         max-width:225px;
         height:auto;
         border-right:none;
@@ -125,7 +137,11 @@
     <br>
     <div class="content">
     <main>
-    <p style="font-size:30px;transform: scaleY(0.82);"><b>home</b></p>
+  <p style="font-size:30px;transform:scaleY(0.82);"><b>home</b></p><div class="goingright">
+      <p>nevermind, overhauled home page</p>
+    </div><div class="allDiv">
+    <div class="myDiv3">
+    
     <div>
       <p class="myDiv">
         <br>
@@ -137,16 +153,14 @@
         <br>
         </p>
     </div>
-    <div class="goingright">
-      <p>nevermind, overhauled home page</p>
-    </div>
-     <br>
-      <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
+    
+     <br><br>
+      <center><a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a></center>
       <br><p style="font-size:14px;">( click to go to navigation )</p>
     <br>  
     <br>
-  <div class="allDiv">
-    <div class="myDiv2">
+</div>
+      <div><br><div class="myDiv2">
         <p><b>accounts / contact</b></p>
         <p><a href="https://twitter.com/crexesis">🕊 &nbsp;twitter</a></p>
         <p><a href="https://www.youtube.com/channel/UC4Pslhgm2AeEEeVCWmiqVOA/">📺 &nbsp;youtube</a></p>
@@ -154,23 +168,22 @@
         <p><a href="https://curiouscat.qa/crex">❓ &nbsp;curiouscat</a></p>
         <p><a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa">🎧 &nbsp;spotify</a></p>
         <p>💬 &nbsp;discord: crex#3651</p>
-        <br>
-    </div>
-    <div class="featured">
+        
+    <br><br></div></div>
+
+    <div><br><div class="featured">
       <p>
         <b>----------<br>featured<br>----------</b>
       </p>
       <a href="tips/googletranspng.html"><p style="text-decoration:underline;">how to make sure you get an actual transparent png image and not just a fake jpg one on google</p></a>
       <br>
+      
+      
       <div class="featured-img">
-        <a href="/wallpapers/Swirls Light.png"><img src="/wallpapers/Swirls Light.png"></a>
+        <a href="/art 2021/croix compilation.png"><img src="/art 2021/croix compilation.png"></a>
       </div>
       <br>
-      <div class="featured-img">
-        <a href="/art 2021/tankman.png"><img src="/art 2021/tankman.png"></a>
-      </div>
-      <br>
-    </div>
+    </div></div>
   </div>
     </main>
     <br>
@@ -180,7 +193,7 @@
     <br>
     <footer>
       <p style="font-size:12px;">started 13 feb 2021</p>
-      <p style="font-size:12px;">last updated 7 apr 2021</p>
+      <p style="font-size:12px;">last updated 5 may 2021</p>
     </footer>
     </div>
     </center>
