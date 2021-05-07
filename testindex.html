@@ -150,7 +150,15 @@
       line-height: 4px;
     }
     .adjust-line-height-big {
-      line-height: 7px;
+      line-height: 16px;
+    }
+    .adjust-line-height-big p {
+      animation: marquee4 1s linear infinite;
+      animation-delay: 0s;
+    }
+    @keyframes marquee4 {
+      0%   { transform:translateX(-3px); }
+      100%   { transform:translateX(-3px); }
     }
     </style>
   </head>
@@ -221,9 +229,11 @@
               <br>
           </p>
           <div class="adjust-line-height-big">
-            <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-            ----------
-            </p>
+           <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+            <b>
+              ----------
+            </b>
+           </p>
           </div>
               <br>
               <br>
