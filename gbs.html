@@ -21,7 +21,7 @@
       color: white;
     }
     a:visited {
-      color: #dae1e3;
+      color: white;
     }
     a:hover, a:active, a:focus {
       color: white;
@@ -41,6 +41,31 @@
     body {
       background-image: url("/special-backgrounds/gbs_bg.png");
     }
+    @font-face {
+        font-family: 'GauFontPopMagic';
+        src:url('GauFontPopMagic.ttf.woff') format('woff'),
+            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+            url('GauFontPopMagic.ttf.eot'),
+            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+      }
+      .adjust-line-height {
+        line-height: 4px;
+      }
+      .adjust-line-height-big {
+        line-height: 16px;
+      }
+      .adjust-line-height-big p {
+        animation: marquee4 1s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes marquee4 {
+        0%   { transform:translateX(-3px); }
+        100%   { transform:translateX(-3px); }
+      }
+          
+    }
   </style>
   </head>
   <body>
@@ -49,7 +74,10 @@
     
     <br>
       <p><a href="navigation.html">< back</p></a>
-    <p style = "font-size:30px;transform: scaleY(0.82);"><b>gold bars series</b></p>
+    <div class="adjust-line-height">
+      <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;"><b>gold bars series</b></p>
+    </div>
+    <br>
     <div style="img">
       <a href="gbs_character_ring_final.png"><img src = "gbs_character_ring_final.png" alt="gbs_character_ring_final">
       <p>click to see full res version</p>
