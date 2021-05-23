@@ -109,7 +109,30 @@
       .rightdiv span {
         line-height:107px;
       }
-
+    @font-face {
+        font-family: 'GauFontPopMagic';
+        src:url('GauFontPopMagic.ttf.woff') format('woff'),
+            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+            url('GauFontPopMagic.ttf.eot'),
+            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+      }
+      .adjust-line-height {
+        line-height: 4px;
+      }
+      .adjust-line-height-big {
+        line-height: 16px;
+      }
+      .adjust-line-height-big p {
+        animation: marquee4 1s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes marquee4 {
+        0%   { transform:translateX(-3px); }
+        100%   { transform:translateX(-3px); }
+      }
+      
     }
   </style>
   </head>
@@ -119,8 +142,14 @@
     
     <br>
     <p><a href="navigation.html">< back</p></a>
-    <p style = "font-size:30px;transform: scaleY(0.82);"><b>art</b></p>
-    <p><a href="https://twitter.com/crexidite/">art only twitter</a>&nbsp; | &nbsp;<a href="https://pizzacube.newgrounds.com/art">view on newgrounds</a></p>
+    <div class="adjust-line-height">
+      <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;"><b>art</b></p>
+    </div>
+    <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      <a href="https://twitter.com/crexidite/">art only twitter</a>
+      &nbsp; | &nbsp;
+      <a href="https://pizzacube.newgrounds.com/art">view on newgrounds</a>
+    </p>
     <br>
     <p>from 2021 onwards, because other than that it's a bit of a mess around different hard drives and around the internet.</p>
     <p>( click images to see full resolution )</p>
