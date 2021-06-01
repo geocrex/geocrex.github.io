@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -17,160 +16,292 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
-    a {
-      color: white;
-      text-decoration: none;
-    }
-    a:visited {
-      color: white;
-      text-decoration: none;
-    }
-    a:hover, a:active, a:focus {
-      color: white;
-      text-decoration: none;
-    }
-    .myDiv {
-      padding: 12px 28px 11px;
-      max-width: 225px;
-      float: center;
-      background-color: #061029; 
-      border: 2px dashed white;
-      text-align: center;
-      border-radius: 10px;
-    }
-    .goingright {
-      max-width: 285px;
-      white-space: nowrap;
-      overflow: hidden;
-      animation-delay: 0s;
-    }
-    .goingright p {
-      display: inline-block;
-      animation: marquee1 8s linear infinite;
-      animation-delay: 0s;
-    }
-    @keyframes marquee1 {
-      0%   { transform:translateX(-268px); }
-      100%   { transform:translateX(285px); }
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    main {
-      flex: 1;
-    }
-    img {
-      display: flex;
-      justify-content: center;
-      float:center;
-      padding: 0;
-      max-width: 225px;
-      height: auto;
-    }
-    .featured {
-      padding: 8px 25px 8px;
-      max-width: 225px;
-      overflow:hidden;
-      background-color: #0a183d;
-      border: 3px dotted #677cb5;
-      text-align: center;
-      border-radius: 10px;
-    }
-    .featured-img {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      width: 100%;
-      height: auto;
-    }
-    .myDiv2 {
-      padding: 18px 40px 18px;
-      float: left;
-      max-width: 225px;
-      text-align: center;
-      border-radius: 10px;
-    }
-    .allDiv {
-      max-width: 650px;
-      display:flex;
-      flex-wrap:wrap;
-      float: center;
-      overflow:hidden;
-      justify-content: center;
-    }
-    @media screen and (max-width: 500px) {
-      .flex-direction {
-         flex-direction:column;
+      a {
+        color: white;
+        text-decoration: none;
       }
-      .myDiv2 {
-        max-width:225px;
-        height:auto;
-        border-right:none;
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover, a:active, a:focus {
+        color: white;
+        text-decoration: none;
+      }
+      .myDiv { 
+        padding: 0px;
+        max-width: 225px;
+        float: center;
+        background-color: #061029; 
+        border: 2px dashed whiter;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .myDiv-plusBG { 
+        padding: 28px 24px 12px 24px;
+        max-width: 225px;
+        float: center;
+        background-color: #061029; 
+        border: 2px dashed white;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .myDiv-plusBG-TOP { 
+        padding: 12px 24px 12px 24px;
+        max-width: 225px;
+        float: center;
+        background-color: #061029; 
+        border: 2px dashed white;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .myDiv-plusBG-TOP-WHITE { 
+        padding: 12px 24px 12px 24px;
+        max-width: 225px;
+        float: center;
+        color: white;
+        background-color: #00060f; 
+        border: 2px solid white;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .goingright {
+        max-width: 225px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation-delay: 0s;
+      }
+      .goingright p {
+        display: inline-block;
+        animation: marquee1 8s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes marquee1 {
+        0%   { transform:translateX(-268px); }
+        100%   { transform:translateX(285px); }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+      img {
+        display: flex;
+        justify-content: center;
+        float:center;
+        padding: 0;
+        max-width: 225px;
+        height: auto;
       }
       .featured {
-        max-width:225px;
-        height:auto;
+        padding: 8px 18px 24px 18px;
+        max-width: 225px;
+        float: left;
+        overflow: hidden;
+        background-color: #0a183d;
+        border: 3px dotted #677cb5;
+        text-align: center;
+        border-radius: 10px;
       }
-      .featured span {
-        line-height:107px;
+      .featured-img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: auto;
       }
+      .myDiv2 {
+        padding: 18px 38px 28px 34px;
+        float: left;
+        max-width: 225px;
+        text-align: center;
+        border: 0px dotted #677cb5;
+      }
+      .dividerDiv {
+        padding: 2px 14px 2px;
+        float: center;
+        max-width: 225px;
+        text-align: center;
+        border: 0px dotted #677cb5;
+      }
+      .myDiv3 {
+        padding: 2px 18px 28px 18px;
+        float: left;
+        max-width: 225px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .allDiv {
+        max-width: 1600px;
+        display: flex;
+        flex-wrap: wrap;
+        float: center;
+        overflow: hidden;
+        justify-content: center;
+        padding: 0;
+      }
+      @media screen and (max-width: 500px) {
+        .flex-direction {
+           flex-direction:column;
+        }
+        .myDiv2 {
+          max-width:225px;
+          height:auto;
+          border-right:none;
+        }
+        .myDiv3 {
+          max-width:225px;
+          height:auto;
+          border-right:none;
+        }
+        .featured {
+          max-width:225px;
+          height:auto;
+        }
+        .featured span {
+          line-height:107px;
+        }
 
-    }
+      }
+      @font-face {
+        font-family: 'GauFontPopMagic';
+        src:url('GauFontPopMagic.ttf.woff') format('woff'),
+            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+            url('GauFontPopMagic.ttf.eot'),
+            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+      }
+      .adjust-line-height {
+        line-height: 4px;
+      }
+      .adjust-line-height-big {
+        line-height: 16px;
+      }
+      .adjust-line-height-big p {
+        animation: marquee4 1s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes marquee4 {
+        0%   { transform:translateX(-3px); }
+        100%   { transform:translateX(-3px); }
+      }
+      .socials-box {
+        display: inline-block;
+        padding: 0px 0px 0px 24px;
+        float: center;
+      }
+      .socials-box span {
+        margin-right: 24px;
+        float: center;
+        padding: 12px 0px 12px 0px;
+      }
     </style>
   </head>
   <body>
     <center>
     <br>
-    <br>
+    <p style="font-size:7.5px;"> </p>
     <div class="content">
     <main>
-    <p style="font-size:30px;transform: scaleY(0.82);"><b>home</b></p>
-    <div>
-      <p class="myDiv">
-        <br>
-        hey thanks for visiting my website
-        <br>
-        <br>
-        this is basically just a dump for things that i've made that i'd consider kind of significant and then i tried to make it look nice
-        <br>
-        <br>
-        </p>
+    <div class="adjust-line-height">
+      <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;"><b>home</b></p>
+      <div class="goingright">
+        <p>nevermind, overhauled home page</p>
+      </div>
     </div>
-    <div class="goingright">
-      <p>nevermind, overhauled home page</p>
-    </div>
-     <br>
-      <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
-      <br><p style="font-size:14px;">( click to go to navigation )</p>
-    <br>  
+   <br>
+   <br>
+  <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;"><b>accounts / contact</b></p>
+  <div class="socials-box">
+    <span style="display: inline-block;"><a href="https://twitter.com/crexesis">🕊 &nbsp;twitter</a></span>
+    <span style="display: inline-block;"><a href="https://www.youtube.com/channel/UC4Pslhgm2AeEEeVCWmiqVOA/">📺 &nbsp;youtube</a></span>
+    <span style="display: inline-block;"><a href="https://pizzacube.newgrounds.com">🌐 &nbsp;newgrounds</a></span>
+    <span style="display: inline-block;"><a href="https://curiouscat.qa/crex">⁉️ &nbsp;curiouscat</a></span>
+    <span style="display: inline-block;"><a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa">🎧 &nbsp;spotify</a></span>
+    <span style="display: inline-block;">💬 &nbsp;discord: crex#3651</span>
     <br>
+    <br>
+  </div>
+  <br>
   <div class="allDiv">
-    <div class="myDiv2">
-        <p><b>accounts / contact</b></p>
-        <p><a href="https://twitter.com/crexesis">🕊 &nbsp;twitter</a></p>
-        <p><a href="https://www.youtube.com/channel/UC4Pslhgm2AeEEeVCWmiqVOA/">📺 &nbsp;youtube</a></p>
-        <p><a href="https://pizzacube.newgrounds.com">🌐 &nbsp;newgrounds</a></p>
-        <p><a href="https://curiouscat.qa/crex">❓ &nbsp;curiouscat</a></p>
-        <p><a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa">🎧 &nbsp;spotify</a></p>
-        <p>💬 &nbsp;discord: crex#3651</p>
-        <br>
+    <div class="myDiv3">
+     <div>
+       <div class="myDiv">
+         <p></p>
+           <div class="myDiv-plusBG-TOP-WHITE">
+             <p style="text-align:left;">
+                 <b><i>
+                   <u>on this page:</u>
+                   <br>
+                 </i></b>
+             </p>
+             <p style="text-align:left;">
+                <li><b><i>this</i></b></li>
+                <li><b><i>link to other pages</i></b></li>
+                <li><b><i>social links</i></b></li>
+                <li><b><i>featured</i></b></li>
+             <br>
+             <br>
+             <center>
+               <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
+               <br>
+               <p style="font-size:14px;">
+                 <a href="navigation.html">
+                   ( click to go to navigation )
+                 </a>
+               </p>
+             </center>
+             <p style="font-size:2.75px;"> </p>
+             <br>
+           </div>
+           <br>
+         <div class="myDiv-plusBG">
+           hey thanks for visiting my website
+           <br>
+           <br>
+           here's a dump of things i've made that i consider kind of significant and i tried to make look nice
+           <p></p>
+         </div>
+       </div>
+     </div>
     </div>
-    <div class="featured">
-      <p>
-        <b>----------<br>featured<br>----------</b>
-      </p>
-      <a href="tips/googletranspng.html"><p style="text-decoration:underline;">how to make sure you get an actual transparent png image and not just a fake jpg one on google</p></a>
+    
+    <br>
+    <br>
+    
+    <div>
       <br>
-      <div class="featured-img">
-        <a href="/wallpapers/Swirls Light.png"><img src="/wallpapers/Swirls Light.png"></a>
+      <div class="featured">
+        <div>
+          <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+            <b>
+              <br>
+              ----------
+              <br>
+              featured
+              <br>
+          </p>
+          <div class="adjust-line-height-big">
+           <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+            <b>
+              ----------
+            </b>
+            </b></b></b></b>
+           </p>
+          </div>
+        </div>
+        <a href="tips/googletranspng.html">
+          <p style="text-decoration:underline;">how to make sure you get an actual transparent png image and not just a fake jpg one on google</p>
+        </a>
+        <br>
+        <div class="featured-img">
+          <a href="/art 2021/croix compilation.png"><img src="/art 2021/croix compilation.png"></a>
       </div>
-      <br>
-      <div class="featured-img">
-        <a href="/art 2021/tankman.png"><img src="/art 2021/tankman.png"></a>
-      </div>
-      <br>
+     </div>
     </div>
   </div>
     </main>
@@ -179,9 +310,10 @@
     <br>
     <br>
     <br>
+    <br>
     <footer>
       <p style="font-size:12px;">started 13 feb 2021</p>
-      <p style="font-size:12px;">last updated 7 apr 2021</p>
+      <p style="font-size:12px;">last updated 27 may 2021</p>
     </footer>
     </div>
     </center>
