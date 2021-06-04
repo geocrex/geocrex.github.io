@@ -19,13 +19,30 @@
   <style>
     a {
       color: white;
+      text-decoration: none;
+      animation: dehover-anim 0.15s ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
     }
+    @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+      }
     a:visited {
       color: white;
+      text-decoration: none;
     }
     a:hover, a:active, a:focus {
       color: white;
+      text-decoration: none;
+      animation: hover-anim 0.04s ease-in;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
     }
+    @keyframes hover-anim {
+        0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+        100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+      }
     img-og {
       max-width: 100%;
       height: auto;
@@ -58,7 +75,7 @@
     
     <br>
     
-    <p><a href="navigation.html">&lt; back</a></p>
+    <p><a href="navigation.html" style="color: #ffe0e7; text-decoration: underline;">&lt; back</a></p>
     <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;"><b>amusii</b></p>
     <div style="img">
       <img src="amusiimar2021_800px.png" alt="amusii icon" style="border-radius: 10px;">
