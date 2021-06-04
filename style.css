@@ -7,6 +7,9 @@ body {
   font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
   padding: 10px 0px 25px 0px;
 }
+
+<!-- links stuff -->
+
 a {
     color: white;
     text-decoration: none;
@@ -33,3 +36,79 @@ a {
       0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
       100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
     }
+
+<!-- collapsables stuff -->
+<!-- i CAN do it without javascript ha (except for the one tiniest thing, i think) -->
+<!-- https://www.digitalocean.com/community/tutorials/css-collapsible much love -->
+
+.wrap-collabsible {
+  margin-bottom: 20px 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 6px;
+
+  color: #000000;
+  background: #ffffff;
+
+  cursor: pointer;
+    
+  border-radius: 12px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #003dff;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .1s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .1s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 0px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: .5rem 1rem;
+}
+
