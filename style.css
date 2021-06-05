@@ -49,7 +49,7 @@ input[type='checkbox'] {
   display: none;
 }
 
-.lbl-toggle {
+.input {
   display: block;
   font-weight: bold;
   font-size: 14px;
@@ -67,11 +67,33 @@ input[type='checkbox'] {
   transition: all 0.25s ease-out;
 }
 
+.funnytoggle {
+    nothing, actually
+    wait this will do nothing, Actually. nevermind. just ignore this i think, probably!!!!!
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 0px;
+  color: #000000;
+  background: #ffffff;
+
+  cursor: pointer;
+    
+  border-radius: 12px;
+  transition: all 0.25s ease-out;
+}
+
 .lbl-toggle:hover {
   color: #003dff;
 }
 
-.lbl-toggle::before {
+.lbl-toggle::beforeg {
   content: ' ';
   display: inline-block;
 
@@ -85,14 +107,16 @@ input[type='checkbox'] {
   transition: transform .1s ease-out;
 }
 
-.toggle:checked + .lbl-toggle::before {
+.toggle:checked + .lbl-toggle::clicked + .collapsible-content {
   transform: rotate(90deg) translateX(-3px);
+  max-height: 100vh;
 }
 
 .collapsible-content {
-  max-height: 0px;
+  max-height: 54px;
   overflow: hidden;
   transition: max-height .1s ease-in-out;
+  border-radius: 12px;
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
@@ -100,8 +124,10 @@ input[type='checkbox'] {
 }
 
 .toggle:checked + .lbl-toggle {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .collapsible-content .content-inner {
@@ -109,6 +135,10 @@ input[type='checkbox'] {
   border-bottom: 0px solid rgba(250, 224, 66, .45);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  padding: .5rem 1rem;
+  border-radius: 12px;
+  padding: 2px 16px 10px;
 }
+
+
+
 
