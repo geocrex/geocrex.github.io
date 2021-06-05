@@ -32,6 +32,22 @@
       padding: 0;
       width: 100%;
       max-width: 450px;
+      max-height: 450px;
+      object-fit: cover; /* Do not scale the image */
+      height: cover;
+      object-position: 50% 15%; /* Center the image within the element */
+      padding: 10px 10px 64px;
+      margin: 10px;
+    }
+    .myDiv {
+      padding: 0;
+      max-width: 350px;
+      float: center;
+      text-align: left;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      max-width: 450px;
       height: auto;
     }
     body {
@@ -47,12 +63,21 @@
         font-weight: normal;
         font-style: normal;
       }
+    wheres-wally {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex: 300px;
+      justify-content: center;
+    }
+    wally {
+      padding: 10px 10px 64px;
+      margin: 10px;
+    }
   </style>
   </head>
   <body>
-  
     <center>
-    
     <br>
       <p><a href="navigation.html" style="color: black; text-decoration: underline;">&lt; back</a></p>
     <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
@@ -63,9 +88,40 @@
     <p>---</p>
     <p>( click images to see full resolution )</p>
     <br>
-    
-    <here-is-the-wallpapers>
-      <div style="img">
+    <!-- here is the wallpapers -->
+    <wheres-wally>
+    <!-- i tested it like this at first but in reality it works (mostly?) just fine without this it seems. Hmm.
+
+    ------------------------------------------------------
+
+      <wally>
+        <div class="myDiv">
+          <a href="/wallpapers/Swirls Light.png">
+            <img src="/wallpapers/Swirls Light.png">
+          </a><br>
+        </div>
+     </wally>
+        
+     <wally>
+        <div class="myDiv">
+          <a href="/wallpapers/Swirls Sky.png">
+            <img src="/wallpapers/Swirls Sky.png">
+          </a><br>
+        </div>
+     </wally>
+
+    ------------------------------------------------------
+
+    -->
+        
+        <a href="/wallpapers/iPadOS 15 Light.png">
+        <img src="/wallpapers/iPadOS 15 Light.png"></a>
+        <br><br>
+        
+        <a href="/wallpapers/iPadOS 15 Dark-2.png">
+        <img src="/wallpapers/iPadOS 15 Dark-2.png"></a>
+        <br><br>
+      
         <a href="/wallpapers/Swirls Light.png">
         <img src="/wallpapers/Swirls Light.png"></a>
         <br><br>
@@ -289,9 +345,8 @@
         <br><br>
                              
       </div>
-    </here-is-the-wallpapers>
-      
+    </wheres-wally>
+    <!-- here is the wallpapers --> 
     </center>
-    
   </body>
 </html>
