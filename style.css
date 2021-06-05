@@ -37,11 +37,11 @@ a {
       100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
     }
 
-<!-- collapsables stuff -->
+<!-- collapsibles stuff -->
 <!-- i CAN do it without javascript ha (except for the one tiniest thing, i think) -->
 <!-- https://www.digitalocean.com/community/tutorials/css-collapsible much love -->
 
-.wrap-collabsible {
+.wrap-collapsible {
   margin-bottom: 20px 0;
 }
 
