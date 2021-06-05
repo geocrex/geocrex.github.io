@@ -32,7 +32,10 @@
       padding: 0;
       width: 100%;
       max-width: 450px;
-      height: auto;
+      max-height: 450px;
+      object-fit: cover; /* Do not scale the image */
+      height: cover;
+      object-position: 50% 15%; /* Center the image within the element */
     }
     .myDiv {
       padding: 0;
@@ -368,7 +371,7 @@
     <arty>
      <div class="myDiv">
       <a href="/art 2021/kindlefirey.jpg">
-        <img src="/art 2021/kindlefirey.jpg">
+        <img src="/art 2021/thumbnail---kindlefirey.jpg">
       </a><br>
       <p>
         <b>kindle firey</b>
