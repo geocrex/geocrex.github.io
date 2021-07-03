@@ -19,6 +19,13 @@
       a {
         color: white;
         text-decoration: none;
+        animation: dehover-anim 0.15s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+      }
+      @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
       }
       a:visited {
         color: white;
@@ -27,6 +34,13 @@
       a:hover, a:active, a:focus {
         color: white;
         text-decoration: none;
+        animation: hover-anim 0.04s ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+      }
+      @keyframes hover-anim {
+          0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+          100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
       }
       .myDiv { 
         padding: 0px;
