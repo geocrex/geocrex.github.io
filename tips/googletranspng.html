@@ -17,58 +17,85 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
-    a {
-      color: white;
-    }
-    a:visited {
-      color: white;
-    }
-    a:hover, a:active, a:focus {
-      color: white;
-    }
-    .myDiv {
-      padding: 25px 35px;
-      max-width: 225px;
-      float: center;
-      background-color: #08132E; 
-      border: 2px dashed white;
-      text-align: center;
-      border-radius: 10px;
-    }
-    .goingright {
-      width: 225px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    .goingright p {
-      display: inline-block;
-      animation: marquee1 10s linear infinite;
-    }
-    @keyframes marquee1 {
-      0%   { transform:translateX(-100%); }
-      100%   { transform:translateX(100%); }
-    }
-    .goingrightslow {
-      width: 225px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    .goingrightslow p {
-      display: inline-block;
-      animation: marquee1 20s linear infinite;
-    }
-    @keyframes marquee1 {
-      0%   { transform:translateX(-100%); }
-      100%   { transform:translateX(100%); }
-    }
+      a {
+        color: white;
+        text-decoration: none;
+        animation: dehover-anim 0.15s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+      }
+      @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+      }
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover, a:active, a:focus {
+        color: white;
+        text-decoration: none;
+        animation: hover-anim 0.04s ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+      }
+      @keyframes hover-anim {
+        0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+        100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+      }
+      img {
+        display: flex;
+        justify-content: center;
+        float:center;
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      long-words {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        display: inline-block;
+        word-break: break-word;
+        word-break: break-all;
+        -ms-word-break: break-word;
+        line-break: strict;
+        hyphens: none;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        hyphens: auto;
+        margin:auto;
+        text-align:justify;
+        word-break: break-word;
+        white-space: pre-line;
+      }
+      .myDiv {
+        padding: 0;
+        max-width: 350px;
+        float: center;
+        text-align: left;
+      }
+      body {
+        background-image: url("/special-backgrounds/tips_bg.png");
+      }
+      @font-face {
+          font-family: 'GauFontPopMagic';
+          src:url('GauFontPopMagic.ttf.woff') format('woff'),
+              url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+              url('GauFontPopMagic.ttf.eot'),
+              url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+          font-weight: normal;
+          font-style: normal;
+        }
     </style>
   </head>
   <body>
-  
   <center>
     <br>
-    <p><a href="/tips.html">&lt; back</a></p>
-    <p style="font-size:30px;transform: scaleY(0.82);"><b>transparent pngs</b></p>
+    <p><a href="/tips.html" style="text-decoration: underline; color: #ffcfd7;">< back</a></p>
+    <p style = "font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      <b>transparent pngs</b>
+    </p>
     
     <p>step 1: go to image search</p>
       <img src="/tips/googletranspng/step1.png">
@@ -85,6 +112,11 @@
     <br>
     <br>
     <p>and that's all! you should only be able to see real transparent images now.</p>
-    <br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </center>
   </body>
