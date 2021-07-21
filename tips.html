@@ -11,12 +11,29 @@
   <style>
     a {
       color: white;
+      text-decoration: none;
+      animation: dehover-anim 0.15s ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
+    }
+    @keyframes dehover-anim {
+      0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+      100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
     }
     a:visited {
-      color: #dae1e3;
+      color: white;
+      text-decoration: none;
     }
     a:hover, a:active, a:focus {
       color: white;
+      text-decoration: none;
+      animation: hover-anim 0.04s ease-in;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
+    }
+    @keyframes hover-anim {
+      0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+      100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
     }
     img {
       display: flex;
@@ -52,23 +69,31 @@
     body {
       background-image: url("/special-backgrounds/tips_bg.png");
     }
+    @font-face {
+        font-family: 'GauFontPopMagic';
+        src:url('GauFontPopMagic.ttf.woff') format('woff'),
+            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+            url('GauFontPopMagic.ttf.eot'),
+            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+      }
   </style>
   </head>
   <body>
-  
     <center>
-    
-    <br>
-      <p><a href="navigation.html">&lt; back</a></p>
-    <p style="font-size:30px;transform: scaleY(0.82);"><b>tips</b></p>
-    
-    <div class="myDiv">
-      <a href="tips/googletranspng.html"><p>how to make sure you get an actual transparent png image and not just a fake jpg one on google</p></a>
-      <p style="overflow-wrap: break-word;">another google tip: you can add in "imagesize:_____x_____" to your search if you only want a specific resolution</p>
-    </div>
-      
+     <br>
+      <p>
+        <a href="navigation.html" style="text-decoration: underline; color: #ffcfd7;">< back</a>
+      </p>
+      <p style = "font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+        <b>tips</b>
+      </p>
+      <div class="myDiv">
+        <a href="tips/googletranspng.html"><p>how to make sure you get an actual transparent png image and not just a fake jpg one on google</p></a>
+        <p style="overflow-wrap: break-word;">another google tip: you can add in "imagesize:_____x_____" to your search if you only want a specific resolution</p>
+      </div>
     </center>
-      
     <br>
     <br>
     <br>
