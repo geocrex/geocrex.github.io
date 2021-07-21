@@ -8,77 +8,85 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  <style>
-    a {
-      color: white;
-      text-decoration: none;
-      animation: dehover-anim 0.15s ease-out;
-      animation-iteration-count: 1;
-      animation-fill-mode:forwards;
-    }
-    @keyframes dehover-anim {
-      0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
-      100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
-    }
-    a:visited {
-      color: white;
-      text-decoration: none;
-    }
-    a:hover, a:active, a:focus {
-      color: white;
-      text-decoration: none;
-      animation: hover-anim 0.04s ease-in;
-      animation-iteration-count: 1;
-      animation-fill-mode:forwards;
-    }
-    @keyframes hover-anim {
-      0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
-      100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
-    }
-    img {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-    }
-    long-words {
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      display: inline-block;
-      word-break: break-word;
-      word-break: break-all;
-      -ms-word-break: break-word;
-      line-break: strict;
-      hyphens: none;
-      -webkit-hyphens: none;
-      -moz-hyphens: none;
-      hyphens: auto;
-      margin:auto;
-      text-align:justify;
-      word-break: break-word;
-      white-space: pre-line;
-    }
-    .myDiv {
-      padding: 0;
-      max-width: 350px;
-      float: center;
-      text-align: left;
-    }
-    body {
-      background-image: url("/special-backgrounds/tips_bg.png");
-    }
-    @font-face {
-        font-family: 'GauFontPopMagic';
-        src:url('GauFontPopMagic.ttf.woff') format('woff'),
-            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
-            url('GauFontPopMagic.ttf.eot'),
-            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
-        font-weight: normal;
-        font-style: normal;
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <style>
+      a {
+        color: white;
+        text-decoration: none;
+        animation: dehover-anim 0.15s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
       }
-  </style>
+      @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+      }
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover, a:active, a:focus {
+        color: white;
+        text-decoration: none;
+        animation: hover-anim 0.04s ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+      }
+      @keyframes hover-anim {
+        0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+        100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+      }
+      img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+      long-words {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        display: inline-block;
+        word-break: break-word;
+        word-break: break-all;
+        -ms-word-break: break-word;
+        line-break: strict;
+        hyphens: none;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        hyphens: auto;
+        margin:auto;
+        text-align:justify;
+        word-break: break-word;
+        white-space: pre-line;
+      }
+      .myDiv {
+        padding: 0;
+        max-width: 350px;
+        float: center;
+        text-align: left;
+      }
+      body {
+        background-image: url("/special-backgrounds/tips_bg.png");
+      }
+      @font-face {
+          font-family: 'GauFontPopMagic';
+          src:url('GauFontPopMagic.ttf.woff') format('woff'),
+              url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+              url('GauFontPopMagic.ttf.eot'),
+              url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+          font-weight: normal;
+          font-style: normal;
+        }
+    </style>
   </head>
   <body>
     <center>
