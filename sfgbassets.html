@@ -18,12 +18,25 @@
     <style>
     a {
       color: white;
+      text-decoration: none;
+      animation: dehover-anim 0.15s ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
     }
+    @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+      }
     a:visited {
-      color: #dae1e3;
+      color: white;
+      text-decoration: none;
     }
     a:hover, a:active, a:focus {
       color: white;
+      text-decoration: none;
+      animation: hover-anim 0.04s ease-in;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
     }
     img {
       display: flex;
@@ -31,10 +44,10 @@
       padding: 0;
       width: 100%;
       max-width: 450px;
-      height: auto;
-    }
-    body {
-      background-image: url("/special-backgrounds/gbs_bg.png");
+      max-height: 450px;
+      object-fit: cover; /* Do not scale the image */
+      height: cover;
+      object-position: 50% 15%; /* Center the image within the element */
     }
     .myDiv {
       padding: 0;
@@ -44,8 +57,31 @@
       justify-content: center;
       padding: 0;
       width: 100%;
-      max-width: 208px;
+      max-width: 450px;
       height: auto;
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      float:center;
+      padding: 0;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    art {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex: 300px;
+      justify-content: center;
+    }
+    arty {
+      padding: 10px 10px 64px;
+      margin: 10px;
+    }
+    body {
+      background-image: url("/special-backgrounds/gbs_bg.png");
     }
     .gbs-backgrounds {
       padding: 0;
@@ -58,27 +94,30 @@
       max-width: 350px;
       height: auto;
     }
-    /* for backpack's front sprite, for example */
-    .bigheight {
-      padding: 0;
-      max-width: 350px;
-      float: center;
-      text-align: left;
-      justify-content: center;
-      padding: 0;
-      width: 100%;
-      max-width: 165px;
-      height: auto;
-    .myDiv-center {
-      padding: 0;
-      max-width: 350px;
-      float: center;
-      text-align: left;
-      justify-content: center;
-      padding: 0;
-      width: 100%;
-      max-width: 208px;
-      height: auto;
+    @font-face {
+        font-family: 'GauFontPopMagic';
+        src:url('GauFontPopMagic.ttf.woff') format('woff'),
+            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+            url('GauFontPopMagic.ttf.eot'),
+            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+      }
+      .adjust-line-height {
+        line-height: 4px;
+      }
+      .adjust-line-height-big {
+        line-height: 16px;
+      }
+      .adjust-line-height-big p {
+        animation: marquee4 1s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes marquee4 {
+        0%   { transform:translateX(-3px); }
+        100%   { transform:translateX(-3px); }
+      }
+          
     }
     </style>
   </head>
@@ -86,73 +125,99 @@
   
     <center>
     <br>
-    <p><a href="navigation.html">&lt; navigation</a>&nbsp; | &nbsp;<a href="gbs.html">&lt; gold bars series</a></p>
-    <p style="font-size:30px;transform: scaleY(0.82);"><b>sfgb assets</b></p>
-    <p>in alphabetical order for your convenience (except for the backgrounds, that is)
-    </p><p>---</p><p> ( click images to see full resolution )</p>
-    
+    <p><a href="navigation.html" style="color: #faddb6; text-decoration: underline;">< navigation</a>&nbsp; | &nbsp;<a href="gbs.html" style="color: #faddb6; text-decoration: underline;">< gold bars series</p></a>
+    <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      <b>sfgb assets</b>
+    </p>
+    <p>in alphabetical order for your convenience (except for the backgrounds, that is)</p>
+    <p>---</p>
+    <p>( click images to see full resolution )</p>
     <br>
-      
-    <b><p style="font-size:20px;">backgrounds</p></b>
-    
-    <div class="gbs-backgrounds">
+    <p style="font-size:12px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      backgrounds
+    </p>
+    <art>
+    <arty>
+<!-- art begins (two) -->
+     <div class="myDiv">
       <a href="/gbs-assets/backgrounds/godela_plains.png">
         <img src="/gbs-assets/backgrounds/godela_plains.png">
       </a>
-      <br>
-      Godela Plains
-      <br><br>
-    </div>
-    <br>
-    
-    <div class="gbs-backgrounds">
+      <p>
+        <b>Godela Plains</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
       <a href="/gbs-assets/backgrounds/seroni_city.png">
         <img src="/gbs-assets/backgrounds/seroni_city.png">
       </a>
-      <br>Seroni City
-      <br><br>
-      </div>
-      <br>
-      
-    <div class="gbs-backgrounds">
+      <p>
+        <b>Seroni City</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
       <a href="/gbs-assets/backgrounds/blackcubes_lair.png">
         <img src="/gbs-assets/backgrounds/blackcubes_lair.png">
       </a>
-      <br>blackcube's Lair (Cave)
-        <br><br>
-      </div>
-      <br>
-      
-    <div class="gbs-backgrounds">
+      <p>
+        <b>blackcube's Lair (Cave)</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
       <a href="/gbs-assets/backgrounds/bolasi_forest.png">
         <img src="/gbs-assets/backgrounds/bolasi_forest.png">
       </a>
-      <br>Bolasi Forest
-      <br><br>
-      </div>
-      <br>
-    
-    <div class="gbs-backgrounds">
+      <p>
+        <b>Bolasi Forest</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
       <a href="/gbs-assets/backgrounds/prison_inside.png">
         <img src="/gbs-assets/backgrounds/prison_inside.png">
       </a>
-      <br>Prison (Inside)
-      <br><br>
-      </div>
-      <br>
-      
-    <div class="gbs-backgrounds">
+      <p>
+        <b>Prison (Inside)</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
       <a href="/gbs-assets/backgrounds/prison_outside.png">
         <img src="/gbs-assets/backgrounds/prison_outside.png">
       </a>
-      <br>Prison (Outside)
-      <br><br>
-      </div>
-      <br>
+      <p>
+        <b>Prison (Outside)</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+     </div>
+    </arty>
+<!-- art endpoint -->
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    </art>
       
-    <b><p style="font-size:20px;">bodies</p></b>
-      
-      <div class="myDiv-center">
+    <p style="font-size:12px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      bodies
+    </p>
         <a href="/gbs-assets/bodies/Backpack.png"><p>Backpack</p></a>
         <a href="/gbs-assets/bodies/Backpack Front.png"><p>Backpack Front</p></a>
         <a href="/gbs-assets/bodies/blackcube.png"><p>blackcube</p></a>
@@ -191,12 +256,11 @@
         <a href="/gbs-assets/bodies/Sonic Ring.png"><p>Sonic Ring</p></a>
         <a href="/gbs-assets/bodies/yellowcube.png"><p>yellowcube</p></a>
         <a href="/gbs-assets/bodies/yellowcube front.png"><p>yellowcube Front</p></a>
-      </div>
       <br><br>
       
-    <b><p style="font-size:20px;">poses</p></b>
-      
-      <div class="myDiv-center">
+    <p style="font-size:12px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      poses
+    </p>
         <a href="/gbs-assets/poses/Backpack.png"><p>Backpack</p></a>
         <a href="/gbs-assets/poses/blackcube.png"><p>blackcube</p></a>
         <a href="/gbs-assets/poses/Copper.png"><p>Copper</p></a>
@@ -212,12 +276,11 @@
         <a href="/gbs-assets/poses/redcube.png"><p>redcube</p></a>
         <a href="/gbs-assets/poses/shadowcube.png"><p>shadowcube</p></a>
         <a href="/gbs-assets/poses/Sonic Ring.png"><p>Sonic Ring</p></a>
-      </div>
       <br><br>
     
-    <b><p style="font-size:20px;">props</p></b>
-      
-      <div class="myDiv-center">
+    <p style="font-size:12px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      props
+    </p>
         <a href="/gbs-assets/props/markerclosed.svg"><p>Marker Closed (.svg)</p></a>
         <a href="/gbs-assets/props/markeropen.svg"><p>Marker Open (.svg)</p></a>
         <a href="/gbs-assets/props/monstercube hat.png"><p>Hypothetical monstercube Top Hat (.png)</p></a>
@@ -226,9 +289,6 @@
         <a href="/gbs-assets/props/Security Hat.PNG"><p>Security Hat (.png)</p></a>
         <a href="/gbs-assets/props/Sign.png"><p>Sign (.png)</p></a>
         <a href="/gbs-assets/props/Sign.svg"><p>Sign (.svg)</p></a>
-      </div>
-      <br><br>  
-    
     <br>
     <br>
     <br>
