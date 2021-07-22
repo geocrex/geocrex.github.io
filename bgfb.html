@@ -19,12 +19,25 @@
   <style>
     a {
       color: white;
+      text-decoration: none;
+      animation: dehover-anim 0.15s ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
     }
+    @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+      }
     a:visited {
-      color: #dae1e3;
+      color: white;
+      text-decoration: none;
     }
     a:hover, a:active, a:focus {
       color: white;
+      text-decoration: none;
+      animation: hover-anim 0.04s ease-in;
+      animation-iteration-count: 1;
+      animation-fill-mode:forwards;
     }
     img {
       display: flex;
@@ -47,6 +60,15 @@
     body {
       background-image: url("/special-backgrounds/gbs_bg.png");
     }
+    @font-face {
+        font-family: 'GauFontPopMagic';
+        src:url('/GauFontPopMagic.ttf.woff') format('woff'),
+            url('/GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
+            url('/GauFontPopMagic.ttf.eot'),
+            url('/GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+      }
   </style>
   </head>
   <body>
@@ -54,10 +76,13 @@
     <center>
     
     <br>
-    <p><a href="navigation.html">< back</a></p>
-    <p style="font-size:30px;transform: scaleY(0.82);"><b>bars gold for battle</b></p>
+    <p><a href="navigation.html" style="color: #faddb6; text-decoration: underline;">< navigation</a>&nbsp; | &nbsp;<a href="gbs.html" style="color: #faddb6; text-decoration: underline;">< gold bars series</p></a>
+    <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      <b>bars gold for battle</b>
+    </p>
     <p>name based off of jacknjellify itdf</p>
     <p>bgfb plus is a different thing but i thought i might as well include it here</p>
+    <p>no more coming ever since it's uh cancelled</p>
     <br>
 
     <div class="myDiv">
