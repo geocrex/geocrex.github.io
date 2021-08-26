@@ -16,6 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
+      /* links stuff */
       a {
         color: white;
         text-decoration: none;
@@ -42,46 +43,9 @@
           0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
           100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
       }
-      .featured-title {
-        padding: 0px 0px 0px 5px;
-      }
-      .myDiv { 
-        padding: 0px;
-        max-width: 225px;
-        float: center;
-        background-color: #061029; 
-        border: 2px dashed whiter;
-        text-align: center;
-        border-radius: 10px;
-      }
-      .myDiv-plusBG { 
-        padding: 28px 24px 12px 24px;
-        max-width: 225px;
-        float: center;
-        background-color: #061029; 
-        border: 2px dashed white;
-        text-align: center;
-        border-radius: 10px;
-      }
-      .myDiv-plusBG-TOP { 
-        padding: 12px 24px 12px 24px;
-        max-width: 225px;
-        float: center;
-        background-color: #061029; 
-        border: 2px dashed white;
-        text-align: center;
-        border-radius: 10px;
-      }
-      .myDiv-plusBG-TOP-WHITE { 
-        padding: 10px 24px 10px 24px;
-        max-width: 225px;
-        float: center;
-        color: white;
-        background-color: #00060f; 
-        border: 2px solid white;
-        text-align: center;
-        border-radius: 10px;
-      }
+      
+      
+      /* goin right news */
       .goingright {
         max-width: 650px;
         white-space: nowrap;
@@ -97,6 +61,46 @@
         0%   { transform:translateX(-684px); }
         100%   { transform:translateX(662px); }
       }
+      p:hover, p:active, p:focus {
+        animation-play-state: paused;
+      }
+      
+      
+      /* columns */
+      .featured-title {
+        padding: 0px 0px 0px 5px;
+      }
+      .myDiv { 
+        padding: 0px;
+        max-width: 225px;
+        float: center;
+        background-color: #061029; 
+        border: 2px dashed whiter;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .myDiv-dashed { 
+        padding: 28px 24px 12px 24px;
+        max-width: 225px;
+        float: center;
+        background-color: #061029; 
+        border: 2px dashed white;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .myDiv-blackAndWhite { 
+        padding: 10px 24px 10px 24px;
+        max-width: 225px;
+        float: center;
+        color: white;
+        background-color: #00060f; 
+        border: 2px solid white;
+        text-align: center;
+        border-radius: 10px;
+      }
+      
+      
+      /* columns two */
       .content {
         display: flex;
         flex-direction: column;
@@ -140,13 +144,6 @@
         text-align: center;
         border: 0px dotted #677cb5;
       }
-      .dividerDiv {
-        padding: 2px 14px 2px;
-        float: center;
-        max-width: 225px;
-        text-align: center;
-        border: 0px dotted #677cb5;
-      }
       .myDiv3 {
         padding: 2px 18px 28px 18px;
         float: left;
@@ -186,6 +183,7 @@
         }
 
       }
+      /* the rest of it i guess */
       @font-face {
         font-family: 'GauFontPopMagic';
         src:url('GauFontPopMagic.ttf.woff') format('woff'),
@@ -197,17 +195,6 @@
       }
       .adjust-line-height {
         line-height: 4px;
-      }
-      .adjust-line-height-big {
-        line-height: 16px;
-      }
-      .adjust-line-height-big p {
-        animation: marquee4 1s linear infinite;
-        animation-delay: 0s;
-      }
-      @keyframes marquee4 {
-        0%   { transform:translateX(-3px); }
-        100%   { transform:translateX(-3px); }
       }
       .socials-box {
         display: inline-block;
@@ -238,7 +225,7 @@
         <b>home</b>
       </p>
       <div class="goingright">
-        <p>new main youtube channel? <a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ"><p style="text-decoration:underline;">https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ</p></a></p>
+        <p>new main youtube channel?&nbsp;<a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ" style="text-decoration:underline;">https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ</a></p>
       </div>
     </div>
     <br><br>
@@ -262,7 +249,7 @@
      <div>
        <div class="myDiv">
          <p></p>
-           <div class="myDiv-plusBG-TOP-WHITE">
+           <div class="myDiv-blackAndWhite">
              <p style="text-align:left;">
                  <b><i>
                    <u>on this page:</u>
@@ -289,7 +276,7 @@
              <br>
            </div>
            <br>
-         <div class="myDiv-plusBG">
+         <div class="myDiv-dashed">
            hey thanks for visiting my website
            <br>
            <br>
@@ -348,7 +335,7 @@
     <br>
     <footer>
       <p style="font-size:12px;">started 13 feb 2021</p>
-      <p style="font-size:12px;">last updated 20 aug 2021</p>
+      <p style="font-size:12px;">last updated 26 aug 2021</p>
     </footer>
     </div>
     </center>
