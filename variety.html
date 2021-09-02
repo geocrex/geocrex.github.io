@@ -45,24 +45,37 @@
     img {
       display: flex;
       justify-content: center;
-      width: 100%;
-      max-width: 300px;
-      max-height: 300px;
-      object-fit: cover; /* Do not scale the image */
-      height: cover;
-      object-position: 50% 50%; /* Center the image within the element */
-      margin: 20px;
-      border-radius: 4px;
+      padding: 0;
+      width: auto;
+      max-height: 600px;
     }
     .myDiv {
-      max-width: 300px;
       float: center;
       text-align: left;
       justify-content: center;
       width: 100%;
-      max-width: 300px;
+      max-width: 900px;
+      height: auto;
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      float:center;
+      padding: 0;
+      max-width: 100%;
       height: auto;
       border-radius: 4px;
+    }
+    art {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex: 300px;
+      justify-content: center;
+    }
+    arty {
+      padding: 10px 10px 64px;
+      margin: 10px;
     }
     body {
       background-image: url("/special-backgrounds/variety_bg.png");
@@ -93,6 +106,56 @@
     <p>---</p>
     <p>( click images to see full resolution )</p>
     <br>
+<!-- art begins -->
+  <art>
+    <arty>
+     <div class="myDiv">
+      <a href="/variety/lyb.png">
+        <img src="/variety/lyb.png">
+      </a><br>
+      <p>
+        <b>madeon - love you back concept cover (as in, unofficial)</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
+      <a href="/variety/croix_concept.png">
+        <img src="/variety/croix_concept.png">
+      </a><br>
+      <p>
+        <b>croix concept</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
+      <video width="1024" height="576" controls>
+        <source src="/variety/SFGB 6 Intro v2.mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+      Your browser does not support the video tag.
+      </video>
+       <br>
+      <p>
+        <b>sfgb 6 concept intro at this point just take it i guess lol</b>
+      </p>
+     </div>
+    </arty>
+<!-- art -->
+    <arty>
+     <div class="myDiv">
+      <a href="/art 2021/pizzacube_new-banner.png">
+        <img src="/art 2021/pizzacube_new-banner.png">
+      </a><br>
+      <p>
+        <b>new (pizzacube/newgrounds) banner</b>
+      </p>
+     </div>
+    </arty>
+<!-- art endpoint -->
+    <br><br><br><br><br><br>
     </center>
   </body>
 </html>
