@@ -16,7 +16,11 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
+      
+      
       /* links stuff */
+      
+      
       a {
         color: white;
         text-decoration: none;
@@ -45,7 +49,22 @@
       }
       
       
+      /* page containers */
+      
+      
+      .content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+      
+      
       /* goin right news */
+      
+      
       .goingright {
         max-width: 650px;
         white-space: nowrap;
@@ -67,18 +86,78 @@
       }
       
       
-      /* columns */
+      /* how the image look */
+      
+      
+      img {
+        display: flex;
+        justify-content: center;
+        float:center;
+        padding: 0;
+        max-width: 225px;
+        height: auto;
+        border-radius: 4px;
+      }
+      .featured-img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: auto;
+      }
+      
+      
+      /* S E C T I O N S */
+      
+      
+      /* sections extras */
+      
+      
       .featured-title {
         padding: 0px 0px 0px 5px;
+      }
+      .adjust-line-height-big {
+        line-height: 16px;
+        position: relative;
+        left: -3px;
+      }
+      .featured::-webkit-scrollbar {
+        display: none;
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+      }
+      .myDiv-blackAndWhite::-webkit-scrollbar {
+        display: none;
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
       }
       .myDiv { 
         padding: 0px;
         max-width: 225px;
         float: center;
-        background-color: #061029; 
-        border: 2px dashed whiter;
+        background-color: #061029;
         text-align: center;
         border-radius: 10px;
+      }
+      
+      
+      /* LEFT SECTIONS */
+      
+      
+      .myDiv-blackAndWhite { 
+        padding: 10px 24px 10px 24px;
+        max-width: 225px;
+        float: center;
+        color: white;
+        background-color: #00060f; 
+        border: 2px solid white;
+        text-align: center;
+        border-radius: 10px;
+        height: 320px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
       }
       .myDiv-dashed { 
         padding: 10px 24px 10px 24px;
@@ -90,36 +169,19 @@
         border-radius: 10px;
         height: 224px;
       }
-      .myDiv-blackAndWhite { 
-        padding: 10px 24px 10px 24px;
+      /*  */
+      .myDiv3 {
+        padding: 2px 18px 28px 18px;
+        float: left;
         max-width: 225px;
-        float: center;
-        color: white;
-        background-color: #00060f; 
-        border: 2px solid white;
         text-align: center;
         border-radius: 10px;
       }
       
       
-      /* columns two */
-      .content {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      main {
-        flex: 1;
-      }
-      img {
-        display: flex;
-        justify-content: center;
-        float:center;
-        padding: 0;
-        max-width: 225px;
-        height: auto;
-        border-radius: 4px;
-      }
+      /* RIGHT SECTIONS */
+      
+      
       .featured {
         padding: 8px 18px 20px 18px;
         max-width: 225px;
@@ -130,22 +192,11 @@
         border: 3px dotted #677cb5;
         text-align: center;
         border-radius: 10px;
-        height: 560px;
+        height: 576px;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
       }
-      .featured::-webkit-scrollbar {
-        display: none;
-        width: 0;  /* Remove scrollbar space */
-        background: transparent;  /* Optional: just make scrollbar invisible */
-      }
-      .featured-img {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-      }
+      /* unused lol */
       .myDiv2 {
         padding: 18px 38px 28px 34px;
         float: left;
@@ -153,13 +204,11 @@
         text-align: center;
         border: 0px dotted #677cb5;
       }
-      .myDiv3 {
-        padding: 2px 18px 28px 18px;
-        float: left;
-        max-width: 225px;
-        text-align: center;
-        border-radius: 10px;
-      }
+
+      
+      /* its all coming together */
+      
+      
       .allDiv {
         max-width: 1600px;
         display: flex;
@@ -192,7 +241,11 @@
         }
 
       }
+      
+      
       /* the rest of it i guess */
+      
+      
       @font-face {
         font-family: 'GauFontPopMagic';
         src:url('GauFontPopMagic.ttf.woff') format('woff'),
@@ -224,133 +277,123 @@
   </head>
   <body>
     <center>
-    <br>
-    <p style="font-size:7.5px;"> </p>
-    <div class="content">
-    <main>
-      
-    <div class="adjust-line-height">
-      <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-        <b>home</b>
-      </p>
-      <div class="goingright">
-        <p>new main youtube channel?&nbsp;<a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ" style="text-decoration:underline;">https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ</a></p>
-      </div>
-    </div>
-    <br><br>
-    
-    <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-      <b>accounts / contact</b>
-    </p>
-    <div class="socials-box">
-      <span style="display: inline-block;"><a href="https://twitter.com/crexesis"><img src="/tweetr.png" alt="🕊" width="20" height="20"> &nbsp;twitter</a></span>
-      <span style="display: inline-block;"><a href="https://pizzacube.newgrounds.com"><img src="/newgrounded.png" alt="🌐" width="20" height="20"> &nbsp;newgrounds</a></span>
-      <span style="display: inline-block;"><a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ"><img src="/yoghurt.png" alt="📺" width="20" height="20"> &nbsp;youtube</a></span>
-      <span style="display: inline-block;"><a href="https://curiouscat.qa/crex"><img src="/curiouscat no joke.png" alt="⁉️" width="20" height="20"> &nbsp;curiouscat</a></span>
-      <span style="display: inline-block;"><a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa"><img src="/spottyfi.png" alt="🎧" width="20" height="20"> &nbsp;spotify</a></span>
-      <span style="display: inline-block;"><img src="/whichcord.png" alt="💬" width="20" height="20"> &nbsp;discord: crex#3651</span>
       <br>
-      <br>
-    </div>
-    <br>
-  <div class="allDiv">
-    <div class="myDiv3">
-     <div>
-       <div class="myDiv">
-         <p></p>
-           <div class="myDiv-blackAndWhite">
-             <p style="text-align:left;">
-                 <b><i>
-                   <u>on this page:</u>
-                   <br>
-                 </i></b>
-             </p>
-             <p style="text-align:left;">
-                <li><b><i>this</i></b></li>
-                <li><b><i>link to other pages</i></b></li>
-                <li><b><i>social links</i></b></li>
-                <li><b><i>featured</i></b></li>
-             <br>
-             <br>
-             <center>
-               <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
-               <br>
-               <p style="font-size:14px;">
-                 <a href="navigation.html">
-                   ( click to go to navigation )
-                 </a>
-               </p>
-             </center>
-             <p style="font-size:2.75px;"> </p>
-             <br>
-           </div>
-           <br>
-         <div class="myDiv-dashed" style="display: table; overflow: hidden;">
-           <text style="display: table-cell; vertical-align: middle;">
-             hey thanks for visiting my website
-             <br>
-             <br>
-             here's a (nice) dump of (probably) significant things
-             <br>
-             <br>
-             i promise it's good haha please stick around hahahah
-           </text>
-         </div>
-       </div>
-     </div>
-    </div>
-    <br>
-    <br>
-    <div>
-      <br>
-      <div class="featured">
-        <div class="featured-title">
-          <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-            <b>
-              <br>
-              ----------
-              <br>
-              featured
-              <br>
+      <p style="font-size:7.5px;"> </p>
+      <div class="content">
+      <main>
+      <div class="adjust-line-height">
+          <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+            <b>home</b>
           </p>
-          <div class="adjust-line-height-big">
-           <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-            <b>
-              ----------
-            </b>
-            </b></b></b></b>
-           </p>
+          <div class="goingright">
+            <p>new main youtube channel?&nbsp;<a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ" style="text-decoration:underline;">https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ</a></p>
+          </div>
+      </div>
+      <br>
+      <br>
+      
+      <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+        <b>accounts / contact</b>
+      </p>
+      <div class="socials-box">
+        <span style="display: inline-block;"><a href="https://twitter.com/crexesis"><img src="/tweetr.png" alt="🕊" width="20" height="20"> &nbsp;twitter</a></span>
+        <span style="display: inline-block;"><a href="https://pizzacube.newgrounds.com"><img src="/newgrounded.png" alt="🌐" width="20" height="20"> &nbsp;newgrounds</a></span>
+        <span style="display: inline-block;"><a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ"><img src="/yoghurt.png" alt="📺" width="20" height="20"> &nbsp;youtube</a></span>
+        <span style="display: inline-block;"><a href="https://curiouscat.qa/crex"><img src="/curiouscat no joke.png" alt="⁉️" width="20" height="20"> &nbsp;curiouscat</a></span>
+        <span style="display: inline-block;"><a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa"><img src="/spottyfi.png" alt="🎧" width="20" height="20"> &nbsp;spotify</a></span>
+        <span style="display: inline-block;"><img src="/whichcord.png" alt="💬" width="20" height="20"> &nbsp;discord: crex#3651</span>
+        <br>
+        <br>
+      </div>
+      <br>
+      <div class="allDiv">
+        <div class="myDiv3">
+          <div>
+            <div class="myDiv">
+              <p></p>
+                <div class="myDiv-blackAndWhite">
+                  <p style="text-align:left;">
+                    <b><i><u>on this page:</u><br></i></b>
+                  </p>
+                  <p style="text-align:left;">
+                    <li><b><i>this</i></b></li>
+                    <li><b><i>link to other pages</i></b></li>
+                    <li><b><i>social links</i></b></li>
+                    <li><b><i>featured</i></b></li>
+                  <br>
+                  <br>
+                  <center>
+                    <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
+                    <br>
+                    <p style="font-size:14px;">
+                      <a href="navigation.html">Click the globe to go to navigation!</a>
+                    </p>
+                  </center>
+                  <br>
+                </div>
+                <br>
+                <div class="myDiv-dashed" style="display: table; overflow: hidden;">
+                  <text style="display: table-cell; vertical-align: middle;">
+                    hey thanks for visiting my website
+                    <br>
+                     <br>
+                    here's a (nice) dump of (probably) significant things
+                    <br>
+                    <br>
+                    i promise it's good haha please stick around hahahah
+                  </text>
+                </div>
+            </div>
           </div>
         </div>
-        <a href="tips/googletranspng.html">
-          <p style="text-decoration:underline;">how to make sure you get an actual transparent png image and not just a fake jpg one on google</p>
-        </a>
-        <a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ">
-          <p style="text-decoration:underline;">new youtube channel</p>
-        </a>
         <br>
-        <div class="featured-img">
-          <a href="/art 2021/hifi.png"><img src="/art 2021/hifi.png"></a>
+        <br>
+        <div>
+          <br>
+          <div class="featured">
+            <div class="featured-title">
+              <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+                <b>
+                  <br>
+                  ----------
+                  <br>
+                  featured
+                  <br>
+              </p>
+              <div class="adjust-line-height-big">
+               <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+                <b>
+                  ----------
+                </b>
+                </b></b></b></b>
+               </p>
+              </div>
+            </div>
+            <!-- featured title over -->
+            <a href="tips/googletranspng.html">
+              <p style="text-decoration:underline;">how to make sure you get an actual transparent png image and not just a fake jpg one on google</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ">
+              <p style="text-decoration:underline;">new youtube channel</p>
+            </a>
+            <br>
+            <div class="featured-img">
+              <a href="/art 2021/hifi.png"><img src="/art 2021/hifi.png"></a>
+            </div>
+            <br>
+            <div class="featured-img">
+              <a href="/art 2021/funker.png"><img src="/art 2021/funker.png"></a>
+          </div>
+         </div>
         </div>
-        <br>
-        <div class="featured-img">
-          <a href="/art 2021/funker.png"><img src="/art 2021/funker.png"></a>
       </div>
-     </div>
-    </div>
-  </div>
-    </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>
-      <p style="font-size:12px;">started 13 feb 2021</p>
-      <p style="font-size:12px;">last updated 2 sep 2021</p>
-    </footer>
-    </div>
+      </main>
+      <br><br><br><br><br><br>
+        <footer>
+          <p style="font-size:12px;">started 13 feb 2021</p>
+          <p style="font-size:12px;">last updated 4 sep 2021</p>
+        </footer>
+      </div>
     </center>
   </body>
 </html>
