@@ -49,43 +49,6 @@
       }
       
       
-      /* page containers */
-      
-      
-      .content {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      main {
-        flex: 1;
-      }
-      
-      
-      /* goin right news */
-      
-      
-      .goingright {
-        max-width: 650px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation-delay: 0s;
-      }
-      .goingright p {
-        display: inline-block;
-        animation: marquee1 12s linear infinite;
-        animation-delay: 0s;
-        padding-left: 100%;
-      }
-      @keyframes marquee1 {
-        0%   { transform: translate(0, 0); }
-        100% { transform: translate(-100%, 0); }
-      }
-      p:hover, p:active, p:focus {
-        animation-play-state: paused;
-      }
-      
-      
       /* how the image look */
       
       
@@ -107,10 +70,7 @@
       }
       
       
-      /* S E C T I O N S */
-      
-      
-      /* sections extras */
+      /* SECTIONS */
       
       
       .featured-title {
@@ -140,9 +100,9 @@
         border-radius: 10px;
       }
       
-      
-      /* LEFT SECTIONS */
-      
+      /*  */
+      /*  */
+      /*  */
       
       .myDiv-blackAndWhite { 
         padding: 10px 24px 10px 24px;
@@ -153,7 +113,7 @@
         border: 2px solid white;
         text-align: center;
         border-radius: 10px;
-        height: 320px;
+        height: 315px;
         overflow-x: hidden;
         overflow-y: auto;
         -ms-overflow-style: none;  /* IE and Edge */
@@ -169,18 +129,6 @@
         border-radius: 10px;
         height: 224px;
       }
-      /*  */
-      .myDiv3 {
-        padding: 2px 18px 28px 18px;
-        float: left;
-        max-width: 225px;
-        text-align: center;
-        border-radius: 10px;
-      }
-      
-      
-      /* RIGHT SECTIONS */
-      
       
       .featured {
         padding: 8px 18px 20px 18px;
@@ -192,9 +140,16 @@
         border: 3px dotted #677cb5;
         text-align: center;
         border-radius: 10px;
-        height: 576px;
+        height: 571px;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+      }
+      .myDiv3 {
+        padding: 2px 18px 28px 18px;
+        float: left;
+        max-width: 225px;
+        text-align: center;
+        border-radius: 10px;
       }
       /* unused lol */
       .myDiv2 {
@@ -206,7 +161,36 @@
       }
 
       
-      /* its all coming together */
+      /*  */
+      /*  */
+      /*  */
+      
+      
+      /* goin right news */
+      
+      
+      .goingright {
+        max-width: 650px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation-delay: 0s;
+      }
+      .goingright p {
+        display: inline-block;
+        animation: marquee1 12s linear infinite;
+        animation-delay: 0s;
+        padding-left: 100%;
+      }
+      @keyframes marquee1 {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(-100%, 0); }
+      }
+      p:hover, p:active, p:focus {
+        animation-play-state: paused;
+      }
+      
+      
+      /* the rest of it i guess */
       
       
       .allDiv {
@@ -242,10 +226,6 @@
 
       }
       
-      
-      /* the rest of it i guess */
-      
-      
       @font-face {
         font-family: 'GauFontPopMagic';
         src:url('GauFontPopMagic.ttf.woff') format('woff'),
@@ -272,6 +252,14 @@
         display: block;
         float: left;
         margin: 0px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
       }
     </style>
   </head>
@@ -326,7 +314,7 @@
                     <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
                     <br>
                     <p style="font-size:14px;">
-                      <a href="navigation.html">Click the globe to go to navigation!</a>
+                      <a href="navigation.html">Click the globe to go to other pages!</a>
                     </p>
                   </center>
                   <br>
