@@ -307,6 +307,51 @@
         var today = new Date();
         document.getElementById('dtText').innerHTML=today;
       </script>
+      <span id="time_span"></span>
+      <script>
+        timer();
+        function timer(){
+         var now = new Date,
+          weekday = new Array(7);
+             weekday[0] = "Sunday";
+             weekday[1] = "Monday";
+             weekday[2] = "Tuesday";
+             weekday[3] = "Wednesday";
+             weekday[4] = "Thursday";
+             weekday[5] = "Friday";
+             weekday[6] = "Saturday";
+         var now = new Date,
+         month = new Array(12);
+             month[0] = "Jan";
+             month[1] = "Feb";
+             month[2] = "Mar";
+             month[3] = "Apr";
+             month[4] = "May";
+             month[5] = "Jun";
+             month[6] = "Jul";
+             month[7] = "Aug";
+             month[8] = "Sep";
+             month[9] = "Oct";
+             month[10] = "Nov";
+             month[11] = "Dec";
+             var n = month[now.getMonth()];
+          
+             hours = [weekday[now.getDay()],
+                      now.getDate(),
+                      n,
+                      now.getHours(),]
+                      .join(' ')
+             ampm  = hours<=11 ? ' am' : ' pm'
+             minutes = now.getMinutes(),
+             seconds = now.getSeconds(),
+             t_str = [hours,
+                      (minutes < 10 ? "0" + minutes : minutes),
+                      (seconds < 10 ? "0" + seconds : seconds)]
+                         .join(':') + ampm;
+         document.getElementById('time_span').innerHTML = t_str;
+         setTimeout(timer,1000);
+        }
+      </script>
       <div class="allDiv">
         <div class="myDiv3">
           <div>
