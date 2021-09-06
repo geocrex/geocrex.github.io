@@ -263,6 +263,12 @@
       main {
         flex: 1;
       }
+      .dtText {
+        float: center;
+      }
+      dtText {
+        float: center;
+      }
     </style>
   </head>
   <body>
@@ -273,7 +279,7 @@
       <main>
       <div class="adjust-line-height">
           <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-            <b>home</b>
+            <b>home!</b>
           </p>
           <div class="goingright">
             <p>new main youtube channel?&nbsp;<a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ" style="text-decoration:underline;">https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ</a></p>
@@ -296,6 +302,11 @@
         <br>
       </div>
       <br>
+      <span id="dtText"></span>
+      <script>
+        var today = new Date();
+        document.getElementById('dtText').innerHTML=today;
+      </script>
       <div class="allDiv">
         <div class="myDiv3">
           <div>
