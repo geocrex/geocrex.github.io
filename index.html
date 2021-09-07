@@ -341,13 +341,15 @@
                       '-',
                       now.getHours(),]
                       .join(' ')
-             ampm  = hours<=11 ? ' am' : ' pm'
              minutes = now.getMinutes(),
              seconds = now.getSeconds(),
+             if (hours = 0) {
+               hours = 1;
+             }
              t_str = [hours,
                       (minutes < 10 ? "0" + minutes : minutes),
                       (seconds < 10 ? "0" + seconds : seconds)]
-                         .join(':') + ampm;
+                         .join(':');
          document.getElementById('time_span').innerHTML = t_str;
          setTimeout(timer,1000);
         }
