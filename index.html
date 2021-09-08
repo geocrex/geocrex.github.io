@@ -334,13 +334,16 @@
              month[10] = "Nov";
              month[11] = "Dec";
              var n = month[now.getMonth()];
+             var realHours = now.getHours(),
+             realHours = (realHours % 12) || 12;
           
              hours = [weekday[now.getDay()],
                       now.getDate(),
                       n,
                       '-',
-                      now.getHours(),]
+                      realHours,]
                       .join(' ')
+             
              minutes = now.getMinutes(),
              seconds = now.getSeconds(),
              t_str = [hours,
