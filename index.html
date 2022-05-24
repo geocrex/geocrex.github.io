@@ -16,11 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
-      
-      
       /* links stuff */
-      
-      
       a {
         color: white;
         text-decoration: none;
@@ -47,15 +43,11 @@
           0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
           100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
       }
-      
-      
       /* how the image look */
-      
-      
       img {
         display: flex;
         justify-content: center;
-        float:center;
+        float: center;
         padding: 0;
         max-width: 225px;
         height: auto;
@@ -68,19 +60,58 @@
         width: 100%;
         height: auto;
       }
-      
-      
-      /* SECTIONS */
-      
-      
+      /* --- SECTIONS _ BOXES --- */
+      .trapezoid {
+        border-top: 100px solid red;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 100px;
+        float: left;
+      }
+      .box {
+        width: 300px;
+        /* height: 150px; */
+        position: relative;
+        padding: 5px;
+        left: 1em;
+      }
+      .box:before {
+        content: "";
+        position: absolute;
+        /* border: 3px solid darkcyan; */
+        border-radius: 5px;
+        box-shadow:0 0 0 3px darkcyan;
+
+        top: -4%; bottom: -11%; left: -3%; right: -3%;
+        z-index: -1;
+
+        -webkit-transform: perspective(50em) rotateX(-30deg);
+        transform: perspective(50em) rotateX(-30deg);
+      }
+      /* --- FEATURED --- */
       .featured-title {
         padding: 0px 0px 0px 5px;
+      }
+      .featured {
+        padding: 8px 18px 20px 18px;
+        max-width: 225px;
+        float: left;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #0a183d;
+        border: 3px dotted #677cb5;
+        text-align: center;
+        border-radius: 10px;
+        height: 574px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
       }
       .adjust-line-height-big {
         line-height: 16px;
         position: relative;
         left: -3px;
       }
+      /* --- HIDIN SCROLLBARS --- */
       .featured::-webkit-scrollbar {
         display: none;
         width: 0;  /* Remove scrollbar space */
@@ -91,6 +122,7 @@
         width: 0;  /* Remove scrollbar space */
         background: transparent;  /* Optional: just make scrollbar invisible */
       }
+      /* --- MY DIVS --- */
       .myDiv { 
         padding: 0px;
         max-width: 225px;
@@ -99,11 +131,21 @@
         text-align: center;
         border-radius: 10px;
       }
-      
-      /*  */
-      /*  */
-      /*  */
-      
+      /* unused lol */
+      .myDiv2 {
+        padding: 18px 38px 28px 34px;
+        float: left;
+        max-width: 225px;
+        text-align: center;
+        border: 0px dotted #677cb5;
+      }
+      .myDiv3 {
+        padding: 2px 18px 28px 18px;
+        float: left;
+        max-width: 225px;
+        text-align: center;
+        border-radius: 10px;
+      }
       .myDiv-blackAndWhite { 
         padding: 10px 24px 10px 24px;
         max-width: 225px;
@@ -129,46 +171,7 @@
         border-radius: 10px;
         height: 224px;
       }
-      
-      .featured {
-        padding: 8px 18px 20px 18px;
-        max-width: 225px;
-        float: left;
-        overflow-x: hidden;
-        overflow-y: auto;
-        background-color: #0a183d;
-        border: 3px dotted #677cb5;
-        text-align: center;
-        border-radius: 10px;
-        height: 574px;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
-      .myDiv3 {
-        padding: 2px 18px 28px 18px;
-        float: left;
-        max-width: 225px;
-        text-align: center;
-        border-radius: 10px;
-      }
-      /* unused lol */
-      .myDiv2 {
-        padding: 18px 38px 28px 34px;
-        float: left;
-        max-width: 225px;
-        text-align: center;
-        border: 0px dotted #677cb5;
-      }
-
-      
-      /*  */
-      /*  */
-      /*  */
-      
-      
-      /* goin right news */
-      
-      
+      /* --- GOIN RIGHT NEWS --- */
       .goingright {
         max-width: 650px;
         white-space: nowrap;
@@ -181,6 +184,7 @@
         animation-delay: 0s;
         padding-left: 100%;
       }
+      /* --- I FORGOT SOME KINDA ANIMAATION NVM STILL GOING RIGHT --- */
       @keyframes marquee1 {
         0%   { transform: translate(0, 0); }
         100% { transform: translate(-100%, 0); }
@@ -188,11 +192,7 @@
       p:hover, p:active, p:focus {
         animation-play-state: paused;
       }
-      
-      
-      /* the rest of it i guess */
-      
-      
+      /* --- the rest of it i guess (ALLDIV STUFF) --- */
       .allDiv {
         max-width: 1600px;
         display: flex;
@@ -225,7 +225,7 @@
         }
 
       }
-      
+      /* FONT FACE FR */
       @font-face {
         font-family: 'GauFontPopMagic';
         src:url('GauFontPopMagic.ttf.woff') format('woff'),
@@ -235,6 +235,7 @@
         font-weight: normal;
         font-style: normal;
       }
+      /* UM... */
       .adjust-line-height {
         line-height: 4px;
       }
@@ -260,6 +261,7 @@
         margin: 3 0 0 12;
         text-align: left;
       }
+      /* BOXING UP THE PAGE + I FORGOT WHAT DTTEXT IS */
       .content {
         display: flex;
         flex-direction: column;
