@@ -64,12 +64,18 @@
         height: auto;
         border-radius: 4px;
       }
+      .featured-img:hover, .featured-img:active, .featured-img:focus {
+        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        -ms-transform: scale(1.05); /* IE 9 */
+        -webkit-transform: scale(1.05); /* Safari 3-8 */
+      }
       .featured-img {
         display: flex;
         justify-content: center;
         padding: 0;
         width: 100%;
         height: auto;
+        transition: transform .2s; /* Animation */
       }
       /* --- SECTIONS _ BOXES --- */
       .trapezoid {
@@ -190,7 +196,8 @@
         background-attachment: fixed; background-clip: padding-box;
         border-radius: 10px;
         box-shadow: inset 0 0 0 1px rgba(246,246,247,0.32), 0 3px 9px rgba(0,0,0,0.14);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         border: 1px solid rgba(2,3,4,0.16);
         width: 640px;
         overflow: hidden;
@@ -338,7 +345,7 @@
             <b>home</b>
           </p>
           <div class="goingright">
-            <p>CHECK THE NEW ART!</p>
+            <p>brand new design... awesome</p>
           </div>
       </div>
       <br>
@@ -492,7 +499,7 @@
                   featured
                   <br>
               </p>
-               <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+               <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; transform: translateX(-3px) translateY(0);">
                 <b>
                   ----------
                 </b>
