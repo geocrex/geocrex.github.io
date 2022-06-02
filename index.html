@@ -16,6 +16,17 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
+      div {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */"
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+      }
+      
       /* links stuff */
       a {
         color: white;
@@ -127,7 +138,6 @@
         padding: 0px;
         max-width: 225px;
         float: center;
-        background-color: #061029;
         text-align: center;
         border-radius: 10px;
       }
@@ -171,6 +181,43 @@
         border-radius: 10px;
         height: 224px;
       }
+      
+      /* WINDOWS */
+      /* background-filter usually unsupported lol */
+      .windowframe {
+        left: 0;
+        background: repeating-linear-gradient(45deg, rgba(25,40,55,0.35) 35%, rgba(65,85,100,0.35) 42%, rgba(65,85,100,0.35) 40%, rgba(25,40,55,0.35) 50%, rgba(25,40,55,0.35) 55%, rgba(70,85,100,0.35) 60%, rgba(70,85,100,0.35) 75%, rgba(25,40,55,0.35) 90%);
+        background-attachment: fixed; background-clip: padding-box;
+        border-radius: 6px;
+        box-shadow: inset 0 0 0 1px rgba(246,246,247,0.32), 0 3px 9px rgba(0,0,0,0.14);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(2,3,4,0.16);
+        width: 640px;
+        overflow: hidden;
+        transform: translateX(0) translateY(0);
+        z-index: 0;
+      }
+      .windowframe:target {
+        box-shadow: inset 0 1px 0.35px 2px rgba(255,255,255,0.22),
+        box-shadow: inset 0 3px 0.35px 2px rgba(0,0,0,0.22);
+        0 6px 20px rgba(0,0,0,0.35); z-index: 1; }
+      .title {
+        color: white; float: left;
+        margin-left: 9px; margin-top: 8px;
+      }
+
+      /* TEXTBOX */
+      .textbox {
+        left: 6px; right: 6px; top: 28px; bottom: 6px;
+        background: rgba(255,255,255,1);
+        border-radius: 2px;
+        box-shadow: inset 0 0 0.85px 1px rgba(0,0,0,0.12);
+        color: black;
+        overflow: scroll;
+        position: absolute;
+        z-index: 1;
+      }
+
       /* --- GOIN RIGHT NEWS --- */
       .goingright {
         max-width: 650px;
@@ -412,16 +459,18 @@
                   <br>
                 </div>
                 <br>
-                <div class="myDiv-dashed" style="display: table; overflow: hidden;">
-                  <text style="display: table-cell; vertical-align: middle;">
-                    hey thanks for visiting my website
-                    <br>
-                     <br>
-                    here's a (nice) dump of (probably) significant things
-                    <br>
-                    <br>
-                    i promise it's good haha please stick around hahahah
-                  </text>
+                <div class="windowframe" style="max-width: 225px; height: 244px; border-radius:10px">
+                  <div class="textbox" style="top: 6px; background: rgba(255,255,255,0.95); color:black; border-radius:4px">
+                    <text style="padding: 24px 24px; display: table-cell; vertical-align: middle;">
+                      hey thanks for visiting my website
+                      <br>
+                       <br>
+                      here's a (nice) dump of (probably) significant things
+                      <br>
+                      <br>
+                      i promise it's good haha please stick around hahahah
+                    </text>
+                  </div>
                 </div>
             </div>
           </div>
@@ -472,7 +521,7 @@
       <br><br><br><br><br><br>
         <footer>
           <p style="font-size:12px;">started 13 feb 2021</p>
-          <p style="font-size:12px;">last updated 17 apr 2022</p>
+          <p style="font-size:12px;">last updated 2 jun 2022</p>
         </footer>
       </div>
     </center>
