@@ -105,13 +105,22 @@ a {
       z-index: 1;
     }
 
-    .zoomanim:hover, .zoomanim:active, .zoomanim:focus {
+    .zoomanimlite:hover, .zoomanimlite:active, .zoomanimlite:focus {
       transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       -ms-transform: scale(1.05); /* IE 9 */
       -webkit-transform: scale(1.05); /* Safari 3-8 */
     }
-    .zoomanim {
+    .zoomanimlite {
       transition: transform .2s; /* Animation */
+    }
+
+    .zoomanim:hover, .zoomanim:active, .zoomanim:focus {
+      transform: scale(1.18); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      -ms-transform: scale(1.18); /* IE 9 */
+      -webkit-transform: scale(1.18); /* Safari 3-8 */
+    }
+    .zoomanim {
+      transition: transform .55s; /* Animation */
     }
 
 <!-- collapsibles stuff -->
