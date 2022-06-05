@@ -56,14 +56,14 @@ a {
       content: "";
       position: absolute;
       /* border: 3px solid darkcyan; */
-      border-radius: 5px;
-      box-shadow:0 0 0 3px darkcyan;
+      border-radius: 10px;
+      box-shadow:0 0 100px 2px rgba(197, 214, 231, 0.35);
 
-      top: -4%; bottom: -11%; left: -3%; right: -3%;
+      top: -90%; bottom: -90%; left: 12%; right: 12%;
       z-index: -1;
 
       -webkit-transform: perspective(50em) rotateX(-30deg);
-      transform: perspective(50em) rotateX(-30deg);
+      transform: perspective(50em) rotateX(-40deg);
     }
 
 /* WINDOWS */
