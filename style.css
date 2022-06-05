@@ -49,8 +49,7 @@ a {
       width: 300px;
       /* height: 150px; */
       position: relative;
-      padding: 5px;
-      left: 1em;
+      padding: 0px;
     }
     .box:before {
       content: "";
