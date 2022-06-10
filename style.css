@@ -62,6 +62,7 @@ a {
       z-index: -1;
 
       -webkit-transform: perspective(50em) rotateX(-40deg);
+      -moz-transform: perspective(50em) rotateX(-40deg);
       transform: perspective(50em) rotateX(-40deg);
     }
 
@@ -75,6 +76,7 @@ a {
       box-shadow: inset 0 0 1px 1px rgba(246,246,247,0.32), inset 0 0 4px 2.25px rgba(0,0,0,0.12), 0 3px 9px rgba(0,0,0,0.24), inset 0 2px 8.35px rgba(246,246,247,0.14);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
+      -moz-backdrop-filter: blur(20px);
       border: 1px solid rgba(2,3,4,0.16);
       width: 640px;
       overflow: hidden;
@@ -105,18 +107,20 @@ a {
     }
 
     .zoomanimlite:hover, .zoomanimlite:active, .zoomanimlite:focus {
-      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      transform: scale(1.05); /* (105% zoom) */
       -ms-transform: scale(1.05); /* IE 9 */
       -webkit-transform: scale(1.05); /* Safari 3-8 */
+      -moz-transform: scale(1.05); /* Firefox */
     }
     .zoomanimlite {
       transition: transform .2s; /* Animation */
     }
 
     .zoomanim:hover, .zoomanim:active, .zoomanim:focus {
-      transform: scale(1.18); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      transform: scale(1.18); /* (118% zoom) */
       -ms-transform: scale(1.18); /* IE 9 */
       -webkit-transform: scale(1.18); /* Safari 3-8 */
+      -moz-transform: scale(1.18); /* Firefox */
     }
     .zoomanim {
       transition: transform .55s; /* Animation */
