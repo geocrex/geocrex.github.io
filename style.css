@@ -1,8 +1,6 @@
 * {
-	letter-spacing:0.5px;
+	letter-spacing: 0.5px;
 	image-rendering: pixelated;
-
-	
 }
 
 body {
@@ -80,11 +78,11 @@ a {
       background: repeating-linear-gradient(45deg, rgba(25,40,55,0.35) 35%, rgba(65,85,100,0.35) 42%, rgba(65,85,100,0.35) 40%, rgba(25,40,55,0.35) 50%, rgba(25,40,55,0.35) 55%, rgba(70,85,100,0.35) 60%, rgba(70,85,100,0.35) 75%, rgba(25,40,55,0.35) 90%);
       background-attachment: fixed; background-clip: padding-box;
       border-radius: 10px;
-      box-shadow: inset 0 0 1px 1px rgba(246,246,247,0.32), inset 0 0 4px 2.25px rgba(0,0,0,0.12), 0 3px 9px rgba(0,0,0,0.24), inset 0 2px 8.35px rgba(246,246,247,0.14);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      -moz-backdrop-filter: blur(20px);
-      border: 1px solid rgba(2,3,4,0.16);
+      box-shadow: inset 0 0 1.65px 1px rgba(246,246,247,0.14), inset 0 0 4px 2.25px rgba(0,0,0,0.02), 0 3px 9px rgba(0,0,0,0.26), inset 0 1.5px 6.35px rgba(246,246,247,0.16);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      -moz-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(2,3,4,0.26);
       width: 640px;
       overflow: hidden;
       transform: translateX(0) translateY(0);
@@ -134,8 +132,7 @@ a {
     }
 
 <!-- collapsibles stuff -->
-<!-- i CAN do it without javascript ha (except for the one tiniest thing, i think) -->
-<!-- https://www.digitalocean.com/community/tutorials/css-collapsible much love -->
+<!-- https://www.digitalocean.com/community/tutorials/css-collapsible thanks -->
 
 .wrap-collapsible {
   margin-bottom: 20px 0;
