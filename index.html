@@ -54,6 +54,17 @@
           0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
           100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
       }
+      @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+      }
       /* how the image look */
       img {
         display: flex;
@@ -260,7 +271,7 @@
       <div class="content">
         <main>
           <div class="adjust-line-height">
-            <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: -3px;">
+            <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: -3px; animation: float 8s ease-in-out infinite; animation-delay: 0s;">
               <b>kinsazo</b>
             </p>
             <div class="goingright">
@@ -382,7 +393,7 @@
                   
                   <!--  ON THIS PAGE -->
                   <div class="windowframe" style="max-width: 225px; height: 338px; overflow-x: hidden; overflow-y: hidden; -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */">
-                    <div class="textbox" style="top: 6px; background: rgba(0,0,0,0.78); color:white; border-radius:4px; padding: 10px 24px 10px 24px; border: 2px solid rgba(255,255,255,0.22);">
+                    <div class="textbox" style="top: 6px; background: rgba(0,0,0,0.78); color:white; border-radius:4px; padding: 10px 24px 10px 24px; border: 2px solid rgba(255,255,255,0.22); font-size:15px;">
                       <p style="text-align:left;">
                         <b>
                           <i>
@@ -421,7 +432,7 @@
                             </a>
                           </div>
                           <br>
-                          <p style="font-size:14px;">
+                          <p style="font-size:12px;">
                             <a href="navigation.html">Click the globe to go to other pages!</a>
                           </p>
                         </center>
@@ -434,7 +445,7 @@
                   
                   <!-- INTRO -->
                   <div class="windowframe" style="max-width: 225px; height: 244px; background-color: rgba(48,21,80,0.42);">
-                    <div class="textbox" style="top: 6px; background: rgba(255,255,255,0.15); color:white;">
+                    <div class="textbox" style="top: 6px; background: rgba(255,255,255,0.15); color:white; font-size:15px;">
                       <text style="padding: 24px 24px; display: table-cell; vertical-align: middle;"> hey thanks for visiting my website <br>
                         <br> most of this is on other sites but i made this as an attempt to put it all together <br>
                         <br> enjoy! (hopefully!) </text>
@@ -499,7 +510,7 @@
       <br>
       <footer>
         <p style="font-size:12px;">started 13 feb 2021</p>
-        <p style="font-size:12px;">last updated 15 jun 2022</p>
+        <p style="font-size:12px;">last updated 29 jun 2022</p>
       </footer>
       </div>
     </center>
