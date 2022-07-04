@@ -16,18 +16,17 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
+      /* --- HIDE SCROLLBARS 1 --- */
       div {
         -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */"
+        scrollbar-width: none;  /* Firefox */
       }
-
       ::-webkit-scrollbar {
         display: none;
         width: 0;  /* Remove scrollbar space */
         background: transparent;  /* Optional: just make scrollbar invisible */
       }
-      
-      /* links stuff */
+      /* --- links stuff --- */
       a {
         color: white;
         text-decoration: none;
@@ -59,13 +58,13 @@
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-6px);
+            transform: translateY(-5px);
           }
           100% {
             transform: translateY(0px);
           }
       }
-      /* how the image look */
+      /* --- how the image look --- */
       img {
         display: flex;
         justify-content: center;
@@ -89,9 +88,6 @@
         height: auto;
         transition: transform .2s; /* Animation */
       }
-      .featured-title {
-         padding: 0px 0px 0px 5px;
-       }
       .featured {
         padding: 8px 18px 20px 18px;
         max-width: 225px;
@@ -106,7 +102,7 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
       }
-      /* --- HIDIN SCROLLBARS --- */
+      /* --- HIDIN SCROLLBARS 2 --- */
       .featured::-webkit-scrollbar {
         display: none;
         width: 0;  /* Remove scrollbar space */
@@ -125,7 +121,7 @@
         text-align: center;
         border-radius: 10px;
       }
-      /* unused lol */
+      /* --- unused lol --- */
       .myDiv2 {
         padding: 18px 38px 28px 34px;
         float: left;
@@ -165,7 +161,6 @@
         border-radius: 10px;
         height: 224px;
       }
-
       /* --- GOIN RIGHT NEWS --- */
       .goingright {
         max-width: 650px;
@@ -219,16 +214,6 @@
           line-height:107px;
         }
 
-      }
-      /* FONT FACE FR */
-      @font-face {
-        font-family: 'GauFontPopMagic';
-        src:url('GauFontPopMagic.ttf.woff') format('woff'),
-            url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
-            url('GauFontPopMagic.ttf.eot'),
-            url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
-        font-weight: normal;
-        font-style: normal;
       }
       /* UM... */
       .socials-box {
@@ -334,52 +319,54 @@
           <br>
           <script>
             var today = new Date();
-            document.getElementById('dtText').innerHTML = today;
+            document.getElementById('dtText').innerHTML=today;
           </script>
           <span id="time_span" style="font-size:16px;font-family: monospace;"></span>
           <script>
             timer();
+            function timer(){
+             var now = new Date,
+              weekday = new Array(7);
+                 weekday[0] = "Sunday";
+                 weekday[1] = "Monday";
+                 weekday[2] = "Tuesday";
+                 weekday[3] = "Wednesday";
+                 weekday[4] = "Thursday";
+                 weekday[5] = "Friday";
+                 weekday[6] = "Saturday";
+             var now = new Date,
+             month = new Array(12);
+                 month[0] = "Jan";
+                 month[1] = "Feb";
+                 month[2] = "Mar";
+                 month[3] = "Apr";
+                 month[4] = "May";
+                 month[5] = "Jun";
+                 month[6] = "Jul";
+                 month[7] = "Aug";
+                 month[8] = "Sep";
+                 month[9] = "Oct";
+                 month[10] = "Nov";
+                 month[11] = "Dec";
+                 var n = month[now.getMonth()];
+                 var realHours = now.getHours(),
+                 realHours = (realHours % 12) || 12;
 
-            function timer() {
-              var now = new Date,
-                weekday = new Array(7);
-              weekday[0] = "Sunday";
-              weekday[1] = "Monday";
-              weekday[2] = "Tuesday";
-              weekday[3] = "Wednesday";
-              weekday[4] = "Thursday";
-              weekday[5] = "Friday";
-              weekday[6] = "Saturday";
-              var now = new Date,
-                month = new Array(12);
-              month[0] = "Jan";
-              month[1] = "Feb";
-              month[2] = "Mar";
-              month[3] = "Apr";
-              month[4] = "May";
-              month[5] = "Jun";
-              month[6] = "Jul";
-              month[7] = "Aug";
-              month[8] = "Sep";
-              month[9] = "Oct";
-              month[10] = "Nov";
-              month[11] = "Dec";
-              var n = month[now.getMonth()];
-              var realHours = now.getHours(),
-                realHours = (realHours % 12) || 12;
-              hours = [weekday[now.getDay()],
-                now.getDate(),
-                n, '-',
-                realHours,
-              ].join(' ')
-              minutes = now.getMinutes(),
-                seconds = now.getSeconds(),
-                t_str = [hours,
-                  (minutes < 10 ? "0" + minutes : minutes),
-                  (seconds < 10 ? "0" + seconds : seconds)
-                ].join(':');
-              document.getElementById('time_span').innerHTML = t_str;
-              setTimeout(timer, 1000);
+                 hours = [weekday[now.getDay()],
+                          now.getDate(),
+                          n,
+                          '-',
+                          realHours,]
+                          .join(' ')
+
+                 minutes = now.getMinutes(),
+                 seconds = now.getSeconds(),
+                 t_str = [hours,
+                          (minutes < 10 ? "0" + minutes : minutes),
+                          (seconds < 10 ? "0" + seconds : seconds)]
+                             .join(':');
+             document.getElementById('time_span').innerHTML = t_str;
+             setTimeout(timer,1000);
             }
           </script>
           <br>
@@ -387,68 +374,38 @@
             <div class="myDiv3">
               <div>
                 <div class="myDiv">
-                  <p></p>
-                  
-                  
-                  
                   <!--  ON THIS PAGE -->
+                  <p></p>
                   <div class="windowframe" style="max-width: 225px; height: 338px; overflow-x: hidden; overflow-y: hidden; -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */">
-                    <div class="textbox" style="top: 6px; background: rgba(0,0,0,0.78); color:white; border-radius:4px; padding: 12px 24px; border: 2px solid rgba(255,255,255,0.22); font-size:15px;">
-                      <p style="text-align:left;">
-                        <b>
-                          <i>
-                            <u>on this page:</u>
-                            <br>
-                          </i>
-                        </b>
-                      </p>
-                      <p style="text-align:left;">
-                        <li>
-                          <b>
-                            <i>this</i>
-                          </b>
-                        </li>
-                        <li>
-                          <b>
-                            <i>link to other pages</i>
-                          </b>
-                        </li>
-                        <li>
-                          <b>
-                            <i>social links</i>
-                          </b>
-                        </li>
-                        <li>
-                          <b>
-                            <i>featured</i>
-                          </b>
-                        </li>
-                        <br>
-                        <br>
+                    <div class="textbox" style="top: 6px; background: rgba(0,0,0,0.78); color:white; border-radius:4px; padding: 12px 24px; border: 2px dashed rgba(215,215,238,0.54); font-size:15px;">
+                      <p style="text-align:left;"><b><i><u>on this page:</u><br></i></b></p>
+                        <p style="text-align:left;">
+                          <li><b><i>this</i></b></li>
+                          <li><b><i>link to other pages</i></b></li>
+                          <li><b><i>social links</i></b></li>
+                          <li><b><i>featured</i></b></li>
+                          <br>
+                        </p>
                         <center>
                           <div class="zoomanim">
-                            <a href="navigation.html">
-                              <img src="earthanim.gif" alt="navigation">
-                            </a>
-                          </div>
-                          <br>
+                            <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
+                          </div><br>
                           <p style="font-size:12px;">
                             <a href="navigation.html">Click the globe to go to other pages!</a>
                           </p>
                         </center>
-                        <br>
+                      <br>
                     </div> <!-- textbox -->
                   </div> <!-- windowframe -->
                   <br>
-                  
-                  
-                  
                   <!-- INTRO -->
                   <div class="windowframe" style="max-width: 225px; height: 244px; background-color: rgba(42,21,95,0.42);">
                     <div class="textbox" style="top: 6px; background: rgba(255,255,255,0.15); color:white; font-size:15px;">
-                      <text style="padding: 32px 24px; display: table-cell; vertical-align: middle;"> hey thanks for visiting my website <br>
-                        <br> most of this is on other sites but i made this as an attempt to put it all together <br>
-                        <br> enjoy! (hopefully!) </text>
+                      <text style="padding: 32px 24px; display: table-cell; vertical-align: middle;">
+                        hey thanks for visiting my website
+                        <br><br>most of this is on other sites but i made this as an attempt to put it all together
+                        <br><br>enjoy! (hopefully!)
+                      </text>
                     </div> <!-- textbox -->
                   </div> <!-- windowframe -->
                 </div> <!-- myDiv -->
@@ -458,56 +415,36 @@
             <br>
             <div>
               <br>
-              
-              
               <!-- FEATURED -->
-              <div class="windowframe" style="max-width: 225px; float: left; overflow-x: hidden; overflow-y: auto; height: 574px; padding: 8px 18px 20px 18px; -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */ background-color: rgba(22,21,62,0.82);">
-                <div class="featured-title">
-                  <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-                    <b>
-                      <br> ---------- <br> featured <br>
-                  </p>
-                  <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; transform: translateX(-3px) translateY(0);">
-                    <b> ---------- </b>
-                    </b>
-                  </p>
-                </div> <!-- featured title over -->
+              <div class="windowframe" style="max-width: 225px; float: left; overflow-x: hidden; overflow-y: auto; height: 574px; padding: 8px 18px 20px 18px; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ background-color: rgba(22,21,62,0.82);">
+                <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+                  <b><br>----------<br>featured<br>
+                </p>
+                <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+                  <b>----------</b></b>
+                </p>
                 <br>
                 <div class="featured-img">
-                  <a href="/art 2022/NAX.png">
-                    <img src="/art 2022/NAX.png">
-                  </a>
+                  <a href="/art 2022/NAX.png"><img src="/art 2022/NAX.png"></a>
                 </div>
                 <br>
                 <div class="featured-img">
-                  <a href="/art 2022/naxbanner2.png">
-                    <img src="/art 2022/THUMBNAIL---naxbanner2.png">
-                  </a>
+                  <a href="/art 2022/naxbanner2.png"><img src="/art 2022/THUMBNAIL---naxbanner2.png"></a>
                 </div>
                 <br>
                 <div class="featured-img">
-                  <a href="/art 2021/tankman.png">
-                    <img src="/art 2021/tankman.png">
-                  </a>
+                  <a href="/art 2021/tankman.png"><img src="/art 2021/tankman.png"></a>
                 </div>
                 <br>
                 <div class="featured-img">
-                  <a href="/art 2022/gexesis.png">
-                    <img src="/art 2022/thumbnail---gexesis.png">
-                  </a>
+                  <a href="/art 2022/gexesis.png"><img src="/art 2022/thumbnail---gexesis.png"></a>
                 </div> <!-- featured-img -->
               </div> <!-- windowframe -->
             </div> <!-- whatever div started after intro -->
           </div> <!-- allDiv -->
       </div> <!-- one more for good measure -->
       </main> <!-- end of page, basically -->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br><br><br><br><br><br>
       <footer>
         <p style="font-size:12px;">started 13 feb 2021</p>
         <p style="font-size:12px;">last updated 4 jul 2022</p>
