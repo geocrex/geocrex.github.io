@@ -1,15 +1,4 @@
-* {
-     letter-spacing: 0.25px;
-     image-rendering: pixelated;
-}
-/* FONT FACE */
- @font-face {
-     font-family: 'GauFontPopMagic';
-     src:url('GauFontPopMagic.ttf.woff') format('woff'), url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'), url('GauFontPopMagic.ttf.eot'), url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype');
-     font-weight: normal;
-     font-style: normal;
-}
- body {
+body {
      background-image: url("background.png");
      background-repeat: repeat;
      background-attachment: fixed;
@@ -18,59 +7,61 @@
      font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
      padding: 10px 0px 25px 0px;
 }
- <!-- links stuff --> a {
+
+/* POP MAGIC */
+@font-face {
+     font-family: 'GauFontPopMagic';
+     src:url('GauFontPopMagic.ttf.woff') format('woff'), url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'), url('GauFontPopMagic.ttf.eot'), url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* links stuff */
+
+a {
      color: white;
      text-decoration: none;
      animation: dehover-anim 0.15s ease-out;
      animation-iteration-count: 1;
      animation-fill-mode:forwards;
 }
- @keyframes dehover-anim {
-     0% {
-         text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75);
-    }
-     100% {
-         text-shadow: 0px -2px 5px rgba(255,255,255, 0);
-    }
+@keyframes dehover-anim {
+     0% { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+     100% { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
 }
- a:visited {
+a:visited {
      color: white;
      text-decoration: none;
 }
- a:hover, a:active, a:focus {
+a:hover, a:active, a:focus {
      color: white;
      text-decoration: none;
      animation: hover-anim 0.04s ease-in;
      animation-iteration-count: 1;
      animation-fill-mode:forwards;
 }
- @keyframes hover-anim {
-     0% {
-         text-shadow: 0px -2px 5px rgba(255,255,255, 0);
-    }
-     100% {
-         text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75);
-    }
+@keyframes hover-anim {
+     0% { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+     100% { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
 }
- <!-- BOXES --> .trapezoid {
+ <!-- BOXES -->
+.trapezoid {
      border-top: 100px solid red;
      border-right: 50px solid transparent;
      height: 0;
      width: 100px;
      float: left;
 }
- .box {
+.box {
      width: 300px;
-    /* height: 150px;
-     */
+    /* height: 150px; */
      position: relative;
      padding: 0px;
 }
- .box:before {
+.box:before {
      content: "";
      position: absolute;
-    /* border: 3px solid darkcyan;
-     */
+    /* border: 3px solid darkcyan; */
      border-radius: 10px;
      box-shadow:0 0 90px 2px rgba(175, 182, 191, 0.24);
      top: -90%;
@@ -84,7 +75,7 @@
 }
 /* WINDOWS */
 /* background-filter usually unsupported lol */
- .windowframe {
+.windowframe {
      left: 0;
      background: repeating-linear-gradient(45deg, rgba(25,40,55,0.35) 35%, rgba(25,40,0,0.35) 35%, rgba(25,40,55,0.35) 30%, rgba(70,85,100,0.35) 65%, rgba(70,85,100,0.35) 75%, rgba(25,40,55,0.35) 90%);
      background-attachment: fixed;
@@ -100,19 +91,19 @@
      transform: translateX(0) translateY(0);
      z-index: 0;
 }
- .windowframe:target {
+.windowframe:target {
      box-shadow: inset 0 1px 0.35px 2px rgba(255,255,255,0.22), box-shadow: inset 0 3px 0.35px 2px rgba(0,0,0,0.22);
      0 6px 20px rgba(0,0,0,0.35);
      z-index: 1;
 }
- .title {
+.title {
      color: white;
      float: left;
      margin-left: 9px;
      margin-top: 8px;
 }
 /* TEXTBOX */
- .textbox {
+.textbox {
      left: 6px;
      right: 6px;
      top: 28px;
@@ -125,41 +116,34 @@
      position: absolute;
      z-index: 1;
 }
- .zoomanimlite:hover, .zoomanimlite:active, .zoomanimlite:focus {
-     transform: scale(1.05);
-    /* (105% zoom) */
-     -ms-transform: scale(1.05);
-    /* IE 9 */
-     -webkit-transform: scale(1.05);
-    /* Safari 3-8 */
-     -moz-transform: scale(1.05);
-    /* Firefox */
+/* ZOOM ANIMS */
+.zoomanimlite:hover, .zoomanimlite:active, .zoomanimlite:focus {
+     transform: scale(1.05); /* (105% zoom) */
+     -ms-transform: scale(1.05); /* IE (lol) */
+     -webkit-transform: scale(1.05); /* Safari */
+     -moz-transform: scale(1.05); /* Firefox */
 }
- .zoomanimlite {
-     transition: transform .2s;
-    /* Animation */
+.zoomanimlite {
+     transition: transform .2s; /* Animation */
 }
- .zoomanim:hover, .zoomanim:active, .zoomanim:focus {
-     transform: scale(1.18);
-    /* (118% zoom) */
-     -ms-transform: scale(1.18);
-    /* IE 9 */
-     -webkit-transform: scale(1.18);
-    /* Safari 3-8 */
-     -moz-transform: scale(1.18);
-    /* Firefox */
+.zoomanim:hover, .zoomanim:active, .zoomanim:focus {
+     transform: scale(1.18); /* (118% zoom) */
+     -ms-transform: scale(1.18); /* IE (internet explorer) */
+     -webkit-transform: scale(1.18); /* Safari */
+     -moz-transform: scale(1.18); /* Firefox */
 }
- .zoomanim {
-     transition: transform .55s;
-    /* Animation */
+.zoomanim {
+     transition: transform .55s; /* Animation */
 }
- <!-- collapsibles stuff --> <!-- https://www.digitalocean.com/community/tutorials/css-collapsible thanks --> .wrap-collapsible {
+/*  collapsibles stuff */
+/*  https://www.digitalocean.com/community/tutorials/css-collapsible thanks */
+.wrap-collapsible {
      margin-bottom: 20px 0;
 }
- input[type='checkbox'] {
+input[type='checkbox'] {
      display: none;
 }
- .input {
+.input {
      display: block;
      font-weight: bold;
      font-size: 14px;
@@ -172,10 +156,7 @@
      border-radius: 12px;
      transition: all 0.25s ease-out;
 }
- .funnytoggle {
-     nothing, actually wait this will do nothing, Actually. nevermind. just ignore this i think, probably!!!!! 
-}
- .lbl-toggle {
+.lbl-toggle {
      display: block;
      font-weight: bold;
      font-size: 14px;
@@ -188,10 +169,10 @@
      border-radius: 12px;
      transition: all 0.25s ease-out;
 }
- .lbl-toggle:hover {
+.lbl-toggle:hover {
      color: #003dff;
 }
- .lbl-toggle::beforeg {
+.lbl-toggle::beforeg {
      content: ' ';
      display: inline-block;
      border-top: 5px solid transparent;
@@ -202,26 +183,26 @@
      transform: translateY(-2px);
      transition: transform .1s ease-out;
 }
- .toggle:checked + .lbl-toggle::clicked + .collapsible-content {
+.toggle:checked + .lbl-toggle::clicked + .collapsible-content {
      transform: rotate(90deg) translateX(-3px);
      max-height: 100vh;
 }
- .collapsible-content {
+.collapsible-content {
      max-height: 56px;
      overflow: hidden;
      transition: max-height .1s ease-in-out;
      border-radius: 12px;
 }
- .toggle:checked + .lbl-toggle + .collapsible-content {
+.toggle:checked + .lbl-toggle + .collapsible-content {
      max-height: 100vh;
 }
- .toggle:checked + .lbl-toggle {
+.toggle:checked + .lbl-toggle {
      border-bottom-left-radius: 12px;
      border-bottom-right-radius: 12px;
      border-top-left-radius: 12px;
      border-top-right-radius: 12px;
 }
- .collapsible-content .content-inner {
+.collapsible-content .content-inner {
      background: rgba(255, 255, 255, 0.25);
      border-bottom: 0px solid rgba(250, 224, 66, .45);
      border-bottom-left-radius: 12px;
