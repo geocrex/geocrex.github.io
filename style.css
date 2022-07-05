@@ -146,6 +146,7 @@ input[type='checkbox'] {
 .input {
      display: block;
      font-weight: bold;
+     font-family: 'GauFontPopMagic';
      font-size: 14px;
      text-transform: uppercase;
      text-align: center;
@@ -192,15 +193,15 @@ input[type='checkbox'] {
      overflow: hidden;
      transition: max-height .1s ease-in-out;
      border-radius: 12px;
+     backdrop-filter: blur(16px);
+     -webkit-backdrop-filter: blur(16px);
+     -moz-backdrop-filter: blur(16px);
 }
 .toggle:checked + .lbl-toggle + .collapsible-content {
      max-height: 100vh;
 }
 .toggle:checked + .lbl-toggle {
-     border-bottom-left-radius: 12px;
-     border-bottom-right-radius: 12px;
-     border-top-left-radius: 12px;
-     border-top-right-radius: 12px;
+     border-radius: 12px;
 }
 .collapsible-content .content-inner {
      background: rgba(255, 255, 255, 0.25);
