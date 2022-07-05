@@ -8,6 +8,28 @@ body {
      padding: 10px 0px 25px 0px;
 }
 
+.pages {
+     display: inline-block;
+     float: center;
+     max-width: 950px;
+}
+ .pages span {
+     float: center;
+     padding: 6px 0px 6px 0px;
+}
+ .pages span img {
+     display: inline-block;
+     float: left;
+     justify-content: center;
+     border-radius: 0px;
+}
+ .pages span p {
+     display: inline-block;
+     float: left;
+     margin: 0px 24px 6px 24px;
+     text-align: center;
+}
+
 /* POP MAGIC */
 @font-face {
      font-family: 'GauFontPopMagic';
@@ -44,7 +66,7 @@ a:hover, a:active, a:focus {
      0% { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
      100% { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
 }
- <!-- BOXES -->
+/*  BOXES */
 .trapezoid {
      border-top: 100px solid red;
      border-right: 50px solid transparent;
