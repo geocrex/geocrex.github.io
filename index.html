@@ -58,7 +58,7 @@
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
           }
           100% {
             transform: translateY(0px);
@@ -238,6 +238,47 @@
         margin: 3 0 0 12;
         text-align: left;
       }
+      .globes {
+        display: inline-block;
+        float: center;
+      }
+      .globes span {
+        float: center;
+        padding: 12px 0px 12px 0px;
+      }
+      .globes span img {
+        display: inline-block;
+        float: left;
+        justify-content: center;
+        border-radius: 0px;
+      }
+      .globes span p {
+        display: inline-block;
+        float: left;
+        margin: 0 12 6 12;
+        text-align: center;
+      }
+      .pages {
+        display: inline-block;
+        float: center;
+        max-width: 850px;
+      }
+      .pages span {
+        float: center;
+        padding: 6px 0px 6px 0px;
+      }
+      .pages span img {
+        display: inline-block;
+        float: left;
+        justify-content: center;
+        border-radius: 0px;
+      }
+      .pages span p {
+        display: inline-block;
+        float: left;
+        margin: 0 24 6 24;
+        text-align: center;
+      }
       /* BOXING UP THE PAGE */
       .content {
         display: flex;
@@ -255,13 +296,11 @@
       <p style="font-size:7.5px;"></p>
       <div class="content">
         <main>
-          <div class="adjust-line-height">
-            <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: -3px; animation: float 8s ease-in-out infinite; animation-delay: 0s;">
-              <b>kinsazo</b>
-            </p>
-            <div class="goingright">
-              <p>brand new design... awesome</p>
-            </div>
+          <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: -3px; animation: float 9s ease-in-out infinite; animation-delay: 0s;">
+            <b>kinsazo</b>
+          </p>
+          <div class="goingright">
+            <p>brand new design... awesome</p>
           </div>
           <br>
           <br>
@@ -269,107 +308,104 @@
             <b>accounts / contact</b>
           </p>
           <div class="socials-box">
-            <span style="display: inline-block;">
-              <a href="https://twitter.com/kinsazo">
+            <a href="https://twitter.com/kinsazo">
+              <span style="display: inline-block;">
                 <img src="/tweetr.png" alt="🕊️" width="40" height="40">
                 <p style="font-size:14px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">twitter <br>
                 </p>
                 <br>
                 <p style="font-size:16px;transform: scaleY(1);font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">kinsazo</p>
-              </a>
-            </span>
-            <span style="display: inline-block;">
-              <a href="https://kinsazo.newgrounds.com">
+              </span>
+            </a>
+            <a href="https://kinsazo.newgrounds.com">
+              <span style="display: inline-block;">
                 <img src="/newgrounded.png" alt="🌐" width="40" height="40">
                 <p style="font-size:14px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">newgrounds <br>
                 </p>
                 <br>
                 <p style="font-size:16px;transform: scaleY(1);font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">Kinsazo</p>
-              </a>
-            </span>
-            <span style="display: inline-block;">
-              <a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ">
+              </span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCdC71DXv-uwRd4sI2PP1mSQ">
+              <span style="display: inline-block;">
                 <img src="/yoghurt.png" alt="📺" width="40" height="40">
                 <p style="font-size:14px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">youtube <br>
                 </p>
                 <br>
                 <p style="font-size:16px;transform: scaleY(1);font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">Kinsazo</p>
-              </a>
-            </span>
-            <span style="display: inline-block;">
-              <a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa">
+              </span>
+            </a>
+            <a href="https://open.spotify.com/user/3uznai7oorqhz1967o2r9vssa">
+              <span style="display: inline-block;">
                 <img src="/spottyfi.png" alt="🎧" width="40" height="40">
                 <p style="font-size:14px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">spotify <br>
                 </p>
                 <br>
                 <p style="font-size:16px;transform: scaleY(1);font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">Choceos</p>
-              </a>
-            </span>
-            <span style="display: inline-block;">
-              <img src="/whichcord.png" alt="💬" width="40" height="40">
-              <p style="font-size:14px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">discord <br>
-              </p>
-              <br>
-              <p style="font-size:16px;transform: scaleY(1);font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">crex#3651</p>
-              </a>
-            </span>
+              </span>
+            </a>
+            <a href="https://discord.com">
+              <span style="display: inline-block;">
+                <img src="/whichcord.png" alt="💬" width="40" height="40">
+                <p style="font-size:14px;transform: scaleY(1.65);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">discord <br>
+                </p>
+                <br>
+                <p style="font-size:16px;transform: scaleY(1);font-family: 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">crex#3651</p>
+              </span>
+            </a>
             <br>
             <br>
           </div>
           <br>
-          <script>
-            var today = new Date();
-            document.getElementById('dtText').innerHTML=today;
-          </script>
-          <span id="time_span" style="font-size:16px;font-family: monospace;"></span>
-          <script>
-            timer();
-            function timer(){
-             var now = new Date,
-              weekday = new Array(7);
-                 weekday[0] = "Sunday";
-                 weekday[1] = "Monday";
-                 weekday[2] = "Tuesday";
-                 weekday[3] = "Wednesday";
-                 weekday[4] = "Thursday";
-                 weekday[5] = "Friday";
-                 weekday[6] = "Saturday";
-             var now = new Date,
-             month = new Array(12);
-                 month[0] = "Jan";
-                 month[1] = "Feb";
-                 month[2] = "Mar";
-                 month[3] = "Apr";
-                 month[4] = "May";
-                 month[5] = "Jun";
-                 month[6] = "Jul";
-                 month[7] = "Aug";
-                 month[8] = "Sep";
-                 month[9] = "Oct";
-                 month[10] = "Nov";
-                 month[11] = "Dec";
-                 var n = month[now.getMonth()];
-                 var realHours = now.getHours(),
-                 realHours = (realHours % 12) || 12;
-
-                 hours = [weekday[now.getDay()],
-                          now.getDate(),
-                          n,
-                          '-',
-                          realHours,]
-                          .join(' ')
-
-                 minutes = now.getMinutes(),
-                 seconds = now.getSeconds(),
-                 t_str = [hours,
-                          (minutes < 10 ? "0" + minutes : minutes),
-                          (seconds < 10 ? "0" + seconds : seconds)]
-                             .join(':');
-             document.getElementById('time_span').innerHTML = t_str;
-             setTimeout(timer,1000);
-            }
-          </script>
+          <div class="globes">
+            <span style="display: inline-block;">
+              <img src="earthanim.gif" alt="navigation" height="20" width="20">
+            </span>
+            <span style="display: inline-block;">
+              <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+                explore the site
+              </p>
+            </span>
+            <span style="display: inline-block;">
+              <img src="color_earth.gif" alt="globe gif" height="20" width="20">
+            </span>
+          </div>
           <br>
+          <div class="pages">
+            <span style="display: inline-block;">
+              <p><a href="updates.html">📝 &nbsp;updates</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="tips.html">💡 &nbsp;tips</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="/art/1.html">🖌️ &nbsp;art</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="wallpapers.html">🌉 &nbsp;wallpapers</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="animations.html">🎬 &nbsp;animations</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="games.html">🎮 &nbsp;games</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="music.html">🎹 &nbsp;music</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="oldscratch.html">😸 &nbsp;scratch things</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="coolsites.html">🏆 &nbsp;cool sites</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="bonus.html">🎉 &nbsp;bonus</a></p>
+            </span>
+            <span style="display: inline-block;">
+              <p><a href="extras.html">🚗 &nbsp;extras</a></p>
+            </span>
+          </div>
           <div class="allDiv">
             <div class="myDiv3">
               <div>
