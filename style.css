@@ -233,4 +233,39 @@ input[type='checkbox'] {
     border-radius: 12px;
     padding: 2px 16px 10px;
 }
- 
+
+/* THUMBNAILS WITH CAPTIONS */
+/* TEMPLATE HTML:
+<div class="thumb">
+    <span style="display: inline-block;">
+        <img src="THUMBNAIL.png" width="160" height="120">
+        <p style="font-size:16px;transform: scaleY(1.82);font-family: 'GauFontPopMagic'; display: inline-flex;"><a href="LINK">TITLE</a></p>
+        <p style="display: block;">DESCRIPTION</p>
+    </span>
+</div>
+*/
+
+.thumb {
+    display: block;
+    padding: 0px 0px 0px 24px;
+    float: center;
+    flex-wrap: wrap;
+}
+.thumb span {
+    margin-right: 24px;
+    float: center;
+    padding: 12px 0px 12px 0px;
+    flex-wrap: wrap;
+}
+.thumb span img {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    justify-content: center;
+    border-radius: 4px;
+}
+.thumb span p {
+    text-align: left;
+    justify-content: center;
+    margin-bottom: -2px;
+}
