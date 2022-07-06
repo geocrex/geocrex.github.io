@@ -237,11 +237,11 @@ input[type='checkbox'] {
 /* THUMBNAILS WITH CAPTIONS */
 /* TEMPLATE HTML:
 <div class="thumb">
-    <span>
-        <img src="THUMBNAIL.png" width="160" height="120">
-        <p style="font-size:16px;transform: scaleY(1.82);font-family: 'GauFontPopMagic'; display: inline-grid;"><a href="LINK">TITLE</a></p>
-        <p>DESCRIPTION</p>
-    </span>
+  <span>
+    <a href="LINK"><img src="THUMBNAIL.png" width="160" height="120">
+      <p style="font-size:16px;transform: scaleY(1.82);font-family: 'GauFontPopMagic'; display: inline-grid;">TITLE</p>
+    </a><p>DESCRIPTION</p>
+  </span>
 </div>
 */
 
