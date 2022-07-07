@@ -262,9 +262,119 @@ input[type='checkbox'] {
     margin-bottom: 16px;
     justify-content: center;
     border-radius: 4px;
+    transition: transform .2s; /* Animation */
 }
 .thumb span p {
     text-align: left;
     justify-content: center;
     margin-bottom: -5px;
+}
+.thumb span img:hover, .thumb span img:active, .thumb span img:focus {
+    transform: scale(1.05); /* (105% zoom) */
+    -ms-transform: scale(1.05); /* IE (lol) */
+    -webkit-transform: scale(1.05); /* Safari */
+    -moz-transform: scale(1.05); /* Firefox */
+}
+
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    max-width: 500px;
+    min-height: 250px;
+    float: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: auto;
+    display: block;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    flex-wrap: wrap;
+    opacity: 0;
+    float: center;
+    transition: all 0.0s ease-in-out;
+    display: grid;
+    margin-top: 4px;
+}
+
+.carousel-item img {
+    float: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.carousel-item p {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -5px;
+}
+
+.carousel-item img:hover, .carousel-item img:active, .carousel-item img:focus {
+    transform: scale(1.05); /* (105% zoom) */
+    -ms-transform: scale(1.05); /* IE (lol) */
+    -webkit-transform: scale(1.05); /* Safari */
+    -moz-transform: scale(1.05); /* Firefox */
+}
+.carousel-item img {
+    transition: transform .2s; /* Animation */
+}
+
+.arrow {
+    border: solid rgba(255,255,255,0.75);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.arrow-prev {
+    left:-20px;
+    position:absolute;
+    top: 60px;
+    transform:translateY(-50%) rotate(135deg);
+    margin-left: 30px;
+}
+
+.arrow-next {
+    right:-20px;
+    position:absolute;
+    top: 60px;
+    transform:translateY(-50%) rotate(-45deg);
+    margin-right: 30px;
+}
+
+.light {
+    color:white;
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+}
+.item-2 {
+}
+.item-3 {
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+    }
 }
