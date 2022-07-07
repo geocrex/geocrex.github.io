@@ -276,8 +276,7 @@ input[type='checkbox'] {
     -moz-transform: scale(1.05); /* Firefox */
 }
 
-/* CAROUSEL */
-
+/* CAROUSEL HERE */
 .carousel {
     position: relative;
     max-width: 500px;
