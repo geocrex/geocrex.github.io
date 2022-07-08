@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
-      /* --- HIDE SCROLLBARS 1 --- */
+      /* --- HIDIN SCROLLBARS, MAY OR MAY NOT WORK HERE --- */
       div {
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
@@ -26,7 +26,7 @@
         width: 0;  /* Remove scrollbar space */
         background: transparent;  /* Optional: just make scrollbar invisible */
       }
-      /* --- links stuff --- */
+      /* --- links stuff + a couple anims --- */
       a {
         color: white;
         text-decoration: none;
@@ -64,8 +64,18 @@
             transform: translateY(0px);
           }
       }
+      /* --- SECTIONS / FEATURED --- */
+      .featured {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      .featured::-webkit-scrollbar {
+        display: none;
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+      }
       /* --- how the image look --- */
-      .windowframe img {
+      .featured img {
         display: flex;
         justify-content: center;
         float: center;
@@ -73,6 +83,19 @@
         max-width: 225px;
         height: auto;
         border-radius: 4px;
+      }
+      .featured-img:hover, .featured-img:active, .featured-img:focus {
+        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        -ms-transform: scale(1.05); /* IE 9 */
+        -webkit-transform: scale(1.05); /* Safari 3-8 */
+      }
+      .featured-img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        transition: transform .2s; /* Animation */
       }
       .windowframe-lite {
         left: 0;
@@ -95,45 +118,6 @@
         0 6px 20px rgba(0,0,0,0.35);
         z-index: 1;
       }
-      /* --- SECTIONS / FEATURED --- */
-      .featured-img:hover, .featured-img:active, .featured-img:focus {
-        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        -ms-transform: scale(1.05); /* IE 9 */
-        -webkit-transform: scale(1.05); /* Safari 3-8 */
-      }
-      .featured-img {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        transition: transform .2s; /* Animation */
-      }
-      .featured {
-        padding: 8px 18px 20px 18px;
-        max-width: 225px;
-        float: left;
-        overflow-x: hidden;
-        overflow-y: auto;
-        background-color: #0a183d;
-        border: 3px dotted #677cb5;
-        text-align: center;
-        border-radius: 10px;
-        height: 574px;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
-      /* --- HIDIN SCROLLBARS 2 --- */
-      .featured::-webkit-scrollbar {
-        display: none;
-        width: 0;  /* Remove scrollbar space */
-        background: transparent;  /* Optional: just make scrollbar invisible */
-      }
-      .myDiv-blackAndWhite::-webkit-scrollbar {
-        display: none;
-        width: 0;  /* Remove scrollbar space */
-        background: transparent;  /* Optional: just make scrollbar invisible */
-      }
       /* --- MY DIVS --- */
       .myDiv { 
         padding: 0px;
@@ -142,7 +126,7 @@
         text-align: center;
         border-radius: 10px;
       }
-      /* --- unused lol --- */
+      /* --- unused one lol --- */
       .myDiv2 {
         padding: 18px 38px 28px 34px;
         float: left;
@@ -157,31 +141,6 @@
         text-align: center;
         border-radius: 10px;
       }
-      .myDiv-blackAndWhite { 
-        padding: 10px 24px 10px 24px;
-        max-width: 225px;
-        float: center;
-        color: white;
-        background-color: #00060f; 
-        border: 2px solid white;
-        text-align: center;
-        border-radius: 10px;
-        height: 318px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
-      .myDiv-dashed { 
-        padding: 10px 24px 10px 24px;
-        max-width: 225px;
-        float: center;
-        background-color: #061029; 
-        border: 2px dashed white;
-        text-align: center;
-        border-radius: 10px;
-        height: 224px;
-      }
       /* --- GOIN RIGHT NEWS --- */
       .goingright {
         max-width: 650px;
@@ -191,11 +150,11 @@
       }
       .goingright p {
         display: inline-block;
-        animation: marquee1 8s linear infinite;
+        animation: marquee1 9s linear infinite;
         animation-delay: 0s;
         padding-left: 100%;
       }
-      /* --- I FORGOT SOME KINDA ANIMAATION NVM STILL GOING RIGHT --- */
+      /* --- I FORGOT SOME KINDA ANIMAAATION NVM STILL GOING RIGHT --- */
       @keyframes marquee1 {
         0%   { transform: translate(0, 0); }
         100% { transform: translate(-100%, 0); }
@@ -203,7 +162,7 @@
       p:hover, p:active, p:focus {
         animation-play-state: paused;
       }
-      /* --- the rest of it i guess (ALLDIV STUFF) --- */
+      /* --- ALLDIV STUFF --- */
       .allDiv {
         max-width: 1600px;
         display: flex;
@@ -217,26 +176,8 @@
         .flex-direction {
            flex-direction:column;
         }
-        .myDiv2 {
-          max-width:225px;
-          height:auto;
-          border-right:none;
-        }
-        .myDiv3 {
-          max-width:225px;
-          height:auto;
-          border-right:none;
-        }
-        .featured {
-          max-width:225px;
-          height:auto;
-        }
-        .featured span {
-          line-height:107px;
-        }
-
       }
-      /* UM... */
+      /* --- UM... the rest of it i guess --- */
       .socials-box {
         display: inline-block;
         padding: 0px 0px 0px 24px;
@@ -279,7 +220,7 @@
         margin: 0px 12px 6px 12px;
         text-align: center;
       }
-      /* BOXING UP THE PAGE */
+      /* --- BOXING UP THE PAGE --- */
       .content {
         display: flex;
         flex-direction: column;
@@ -294,12 +235,14 @@
     <center>
       <br>
       <div class="content">
-        <main>
+        <main> <!-- i dont think this does anything -->
           <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic'; letter-spacing: -3px; animation: float 9s ease-in-out infinite; animation-delay: 0s;">
             <b>kinsazo</b>
           </p>
           <div class="goingright">
-            <p>brand new design... awesome</p>
+            <a href="https://geocrex.github.io/updates/2022-02-13-one-year-anniversary.html">
+              <p>📝 LATEST UPDATE: 13/2/22 - <u>"ONE YEAR ANNIVERSARY!!!"</u></p>
+            </a>
           </div>
           <br>
           <br>
@@ -420,7 +363,7 @@
               <span>
                 <a href="gbs.html"><img src="/special-backgrounds/gbs_bg.png" width="160" height="120"><br>
                   <p style="font-size:16px;transform: scaleY(1.82);font-family: 'GauFontPopMagic'; display: inline-grid;">gold bars series</p>
-                </a><p>Object show I made with some people, funny objects do competition and other</p>
+                </a><p>Object show I made with a couple people, funny objects do competition and other</p>
               </span><a class="arrow arrow-prev" href="#item-3"></a>
               <a class="arrow arrow-next" href="#item-2"></a>
             </div>
@@ -428,7 +371,7 @@
               <span>
                 <a href="oldscratch.html"><img src="/special-backgrounds/scratch_bg.png" width="160" height="120"><br>
                   <p style="font-size:16px;transform: scaleY(1.82);font-family: 'GauFontPopMagic'; display: inline-grid;">scratch things</p>
-                </a><p>some old things i made on scratch.mit.edu, some of them cool!</p>
+                </a><p>Some old things i made on scratch.mit.edu, some of them cool!</p>
               </span><a class="arrow arrow-prev" href="#item-1"></a>
               <a class="arrow arrow-next" href="#item-3"></a>
             </div>
@@ -446,27 +389,30 @@
             <div class="myDiv3" style="margin-left: 9px; margin-right: 9px;">
               <div>
                 <div class="myDiv">
-                  <!--  ON THIS PAGE -->
+                  <!--  ABOUT ME LOL -->
                   <p></p>
                   <div class="windowframe" style="max-width: 225px; height: 338px; overflow-x: hidden; overflow-y: hidden; -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */">
                     <div class="textbox" style="top: 6px; background: rgba(0,0,0,0.78); color:white; border-radius:4px; padding: 12px 24px; border: 2px dashed rgba(215,215,238,0.54); font-size:15px;">
-                      <p style="text-align:left;"><b><i><u>on this page:</u><br></i></b></p>
-                        <p style="text-align:left;">
-                          <li><b><i>this</i></b></li>
-                          <li><b><i>link to other pages</i></b></li>
-                          <li><b><i>social links</i></b></li>
-                          <li><b><i>featured</i></b></li>
-                          <br>
+                      <center>
+                        <p></p>
+                        <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic';">about me</p><br>
+                        <a href="/pfp/NAXAPR2022ICON0010.png"><img src="/pfp/NAXAPR2022ICON0010.png" width="48" height="48" style="border-radius: 2px;"></a>
+                        <p>
+                          16 y.o. digital artist living in england, lol
+                          <br><br>he/him
+                          <br>🇧🇷🇬🇷
+                          <br><br><b>a couple interests:</b>
+                          <ul style="line-height:120%; margin-top: -22px; padding: 12px; text-align: left;">
+                            <li>animation
+                            <li>gaming history
+                            <li>newgrounds
+                            <li>game development (mostly with godot)
+                            <li>(ui) design
+                            <li>madeon + porter robinson
+                            <li>mario (Wahoo!)
+                          </ul>
                         </p>
-                        <center>
-                          <div class="zoomanim">
-                            <a href="navigation.html"><img src="earthanim.gif" alt="navigation"></a>
-                          </div><br>
-                          <p style="font-size:12px;">
-                            <a href="navigation.html">Click the globe to go to other pages!</a>
-                          </p>
-                        </center>
-                      <br>
+                      </center>
                     </div> <!-- textbox -->
                   </div> <!-- windowframe -->
                   <br>
@@ -488,39 +434,41 @@
             <div>
               <br>
               <!-- FEATURED -->
-              <div class="windowframe" style="max-width: 225px; margin-left: 9px; margin-right: 9px; float: left; overflow-x: hidden; overflow-y: auto; height: 574px; padding: 8px 18px 20px 18px; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ background-color: rgba(22,21,62,0.82);">
-                <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic';">
-                  <b><br>----------<br>featured<br>
-                </p>
-                <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic';">
-                  <b>----------</b></b>
-                </p>
-                <br>
-                <div class="featured-img">
-                  <a href="/art 2022/NAX.png"><img src="/art 2022/NAX.png"></a>
-                </div>
-                <br>
-                <div class="featured-img">
-                  <a href="/art 2022/naxbanner2.png"><img src="/art 2022/THUMBNAIL---naxbanner2.png"></a>
-                </div>
-                <br>
-                <div class="featured-img">
-                  <a href="/art 2021/tankman.png"><img src="/art 2021/tankman.png"></a>
-                </div>
-                <br>
-                <div class="featured-img">
-                  <a href="/art 2022/gexesis.png"><img src="/art 2022/thumbnail---gexesis.png"></a>
-                </div> <!-- featured-img -->
-              </div> <!-- windowframe -->
-            </div> <!-- whatever div started after intro -->
+              <div class="featured">
+                <div class="windowframe" style="max-width: 225px; margin-left: 9px; margin-right: 9px; float: left; overflow-x: hidden; overflow-y: auto; height: 574px; padding: 8px 18px 20px 18px; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ background-color: rgba(22,21,62,0.82);">
+                  <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic';">
+                    <b><br>----------<br>featured<br>
+                  </p>
+                  <p style="font-size:10px;transform: scaleY(1.65);font-family: 'GauFontPopMagic';">
+                    <b>----------</b></b>
+                  </p>
+                  <br>
+                  <div class="featured-img">
+                    <a href="/art 2022/NAX.png"><img src="/art 2022/NAX.png"></a>
+                  </div>
+                  <br>
+                  <div class="featured-img">
+                    <a href="/art 2022/naxbanner2.png"><img src="/art 2022/THUMBNAIL---naxbanner2.png"></a>
+                  </div>
+                  <br>
+                  <div class="featured-img">
+                    <a href="/art 2021/tankman.png"><img src="/art 2021/tankman.png"></a>
+                  </div>
+                  <br>
+                  <div class="featured-img">
+                    <a href="/art 2022/gexesis.png"><img src="/art 2022/thumbnail---gexesis.png"></a>
+                  </div> <!-- featured-img -->
+                </div> <!-- windowframe -->
+              </div> <!-- featured -->
+            </div> <!-- random div -->
           </div> <!-- allDiv -->
-      </div> <!-- one more for good measure -->
-      </main> <!-- end of page, basically -->
+        </main> <!-- end of page, nearly -->
+      </div> <!-- content -->
       <br><br><br><br><br><br>
       <footer>
         <p style="font-size:12px;">started 13 feb 2021</p>
         <p style="font-size:12px;">last updated 8 jul 2022</p>
-        <p style="font-size:12px;">version 4.0 beta</p>
+        <p style="font-size:12px;">version 4.0 beta (aurora)</p>
       </footer>
       </div>
     </center>
