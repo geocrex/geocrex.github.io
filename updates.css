@@ -95,6 +95,23 @@ a:hover, a:active, a:focus {
     float: center;
     text-align: left;
 }
+long-words {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    word-break: break-word;
+    word-break: break-all;
+    -ms-word-break: break-word;
+    line-break: strict;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: auto;
+    margin:auto;
+    text-align:justify;
+    word-break: break-word;
+    white-space: pre-line;
+}
 /* WINDOWS */
 /* background-filter usually unsupported lol */
 .windowframe {
