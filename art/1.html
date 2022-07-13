@@ -46,13 +46,16 @@
       img {
         display: flex;
         justify-content: center;
+        float: center;
         padding: 0;
         width: 100%;
         max-width: 300px;
         max-height: 300px;
         object-fit: cover; /* Do not scale the image */
+        border-radius: 4px;
         height: cover;
         object-position: 50% 15%; /* Center the image within the element */
+        transition: transform .2s; /* Animation */
       }
       .myDiv {
         padding: 0;
@@ -65,23 +68,19 @@
         padding: 10px 10px 64px;
         margin: 10px;
       }
+      .myDiv img:hover, .myDiv img:active, .myDiv img:focus {
+        transform: scale(1.05); /* (105% zoom) */
+        -ms-transform: scale(1.05); /* IE (lol) */
+        -webkit-transform: scale(1.05); /* Safari */
+        -moz-transform: scale(1.05); /* Firefox */
+      }
       body {
         background-image: url("/special-backgrounds/art_bg.png");
-      }
-      img {
-        display: flex;
-        justify-content: center;
-        float:center;
-        padding: 0;
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
       }
       art {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        flex: 300px;
         justify-content: center;
       }
       .content {
