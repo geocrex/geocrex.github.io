@@ -16,119 +16,92 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
-  <style>
-    a {
-      color: white;
-      text-decoration: none;
-      animation: dehover-anim 0.15s ease-out;
-      animation-iteration-count: 1;
-      animation-fill-mode:forwards;
-    }
-    @keyframes dehover-anim {
-      0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
-      100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
-    }
-    a:visited {
-      color: white;
-      text-decoration: none;
-    }
-    a:hover, a:active, a:focus {
-      color: white;
-      text-decoration: none;
-      animation: hover-anim 0.04s ease-in;
-      animation-iteration-count: 1;
-      animation-fill-mode:forwards;
-    }
-    @keyframes hover-anim {
-        0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
-        100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
-    }
-    img {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      width: 100%;
-      max-width: 300px;
-      max-height: 300px;
-      object-fit: cover; /* Do not scale the image */
-      height: cover;
-      object-position: 50% 15%; /* Center the image within the element */
-    }
-    .myDiv {
-      padding: 0;
-      width: 100%;
-      max-width: 300px;
-      float: center;
-      text-align: left;
-      justify-content: center;
-      height: auto;
-    }
-    body {
-      background-image: url("/special-backgrounds/art_bg.png");
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    main {
-      flex: 1;
-    }
-    img {
-      display: flex;
-      justify-content: center;
-      float:center;
-      padding: 0;
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-    art {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      flex: 300px;
-      justify-content: center;
-    }
-    arty {
-      padding: 10px 10px 64px;
-      margin: 10px;
-    }
-    @font-face {
-        font-family: 'GauFontPopMagic';
-        src:url('/GauFontPopMagic.ttf.woff') format('woff'),
-            url('/GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'),
-            url('/GauFontPopMagic.ttf.eot'),
-            url('/GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype'); 
-        font-weight: normal;
-        font-style: normal;
+    <style>
+      a {
+        color: white;
+        text-decoration: none;
+        animation: dehover-anim 0.15s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
       }
-      .adjust-line-height {
-        line-height: 4px;
+      @keyframes dehover-anim {
+        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
+        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
       }
-      .adjust-line-height-big {
-        line-height: 16px;
+      a:visited {
+        color: white;
+        text-decoration: none;
       }
-      .adjust-line-height-big p {
-        animation: marquee4 1s linear infinite;
-        animation-delay: 0s;
+      a:hover, a:active, a:focus {
+        color: white;
+        text-decoration: none;
+        animation: hover-anim 0.04s ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
       }
-      @keyframes marquee4 {
-        0%   { transform:translateX(-3px); }
-        100%   { transform:translateX(-3px); }
+      @keyframes hover-anim {
+          0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
+          100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
       }
-          
-    }
-  </style>
+      img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        max-width: 300px;
+        max-height: 300px;
+        object-fit: cover; /* Do not scale the image */
+        height: cover;
+        object-position: 50% 15%; /* Center the image within the element */
+      }
+      .myDiv {
+        padding: 0;
+        width: 100%;
+        max-width: 300px;
+        float: center;
+        text-align: left;
+        justify-content: center;
+        height: auto;
+        padding: 10px 10px 64px;
+        margin: 10px;
+      }
+      body {
+        background-image: url("/special-backgrounds/art_bg.png");
+      }
+      img {
+        display: flex;
+        justify-content: center;
+        float:center;
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      art {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex: 300px;
+        justify-content: center;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <center>
     <br>
     <p><a href="/index.html" style="text-decoration: underline; color: #c5d1eb;">< home</p></a>
-      <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+      <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic';">
         <b>art</b>
       </p>
-    <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
+    <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic';">
       <a href="https://twitter.com/crexidite/" style="color: white; text-decoration: underline;">art only twitter</a>
       &nbsp; | &nbsp;
       <a href="https://kinsazo.newgrounds.com/art" style="color: white; text-decoration: underline;">view on newgrounds</a>
@@ -168,412 +141,276 @@
     <p>( click images to see full resolution )</p>
     <br>
     <p style="font-size:10px;transform: scaleY(1.82);font-family: 'GauFontPopMagic', 'Neue Helvetica', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;">
-      <hh style="color: white;"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</hh>
-      <hh style="color: white;">1&nbsp;&nbsp;&nbsp;</hh><a href="/art/2.html" style="color: #c5d1eb;">&nbsp;&nbsp;&nbsp;2</a>
-      <a href="/art/2.html" style="color: #c5d1eb;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+      <!-- left arrow + first page --> <span style="color: white;"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</hh><span style="color: white;">1&nbsp;&nbsp;&nbsp;</hh>
+      <!-- right arrow + last page --> <a href="/art/2.html" style="color: #c5d1eb;">&nbsp;&nbsp;&nbsp;2</a><a href="/art/2.html" style="color: #c5d1eb;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
     </p>
-<!-- art begins -->
-  <art>
-<!-- art begins (two) -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2022/naxbanner2.png">
-        <img src="/art 2022/THUMBNAIL---naxbanner2.png">
-      </a><br>
-      <p>
-        <b>New banner</b>
+    <!-- art begins -->
+    <art>
+      <div class="myDiv">
+        <a href="/art 2022/naxbanner2.png"><img src="/art 2022/THUMBNAIL---naxbanner2.png"></a><br>
+        <p><b>New banner</b><br>
+        <br>14 apr 2022</p>
         <br>
-      </p>
-        14 apr 2022
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            new banner i made, just playing around a lot but i really liked the result
-            <br><br>
-            definitely overused motion blur and color dodge
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                new banner i made, just playing around a lot but i really liked the result
+                <br><br>
+                definitely overused motion blur and color dodge
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2022/NAX.png">
-        <img src="/art 2022/NAX.png">
-      </a><br>
-      <p>
-        <b>NAX (new sona)</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2022/NAX.png"><img src="/art 2022/NAX.png"></a><br>
+        <p><b>NAX (new sona)</b><br>
+        <br>7 apr 2022</p>
         <br>
-      </p>
-        7 apr 2022
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            NEW SONA this is nax uhh
-            <br<br>was going to include concept art but it's kinda bad
-            <br<br>enjoy (??)
-            <br<br>no more croix era, 2021-2022
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                NEW SONA this is nax uhh
+                <br<br>
+                was going to include concept art but it's kinda bad
+                <br<br>
+                enjoy (??)
+                <br<br>
+                no more croix era, 2021-2022
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2022/spotbot.png">
-        <img src="/art 2022/spotbot.png">
-      </a><br>
-      <p>
-        <b>Spot Bot</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2022/spotbot.png"><img src="/art 2022/spotbot.png"></a><br>
+        <p><b>Spot Bot</b><br>
+        <br>1 mar 2022</p>
         <br>
-      </p>
-        1 mar 2022
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            new oc?? robot design based off of the spotify logo and off a dumb rhyme i thought of did not mean to spend this much time on it or post it or anything but here it is lol
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                new oc?? robot design based off of the spotify logo and off a dumb rhyme i thought of did not mean to spend this much time on it or post it or anything but here it is lol
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2022/gexesis.png">
-        <img src="/art 2022/thumbnail---gexesis.png">
-      </a><br>
-      <p>
-        <b>gex</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2022/gexesis.png"><img src="/art 2022/thumbnail---gexesis.png"></a><br>
+        <p><b>gex</b><br>
+        <br>22 jan 2022</p>
         <br>
-      </p>
-        22 jan 2022
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            This is like a luau at mel blanc's house
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                This is like a luau at mel blanc's house
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/crex_sketch.png">
-        <img src="/art 2021/crex_sketch.png">
-      </a><br>
-      <p>
-        <b>crex sketch</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/crex_sketch.png"><img src="/art 2021/crex_sketch.png"></a><br>
+        <p><b>crex sketch</b><br>
+        <br>30 oct 2021</p>
         <br>
-      </p>
-        30 oct 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            sorry for not posting any art for 3 months lol here is some
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                sorry for not posting any art for 3 months lol here is some
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/hifi.png">
-        <img src="/art 2021/thumbnail---hifi.png">
-      </a><br>
-      <p>
-        <b>hi-fi</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/hifi.png"><img src="/art 2021/thumbnail---hifi.png"></a><br>
+        <p><b>hi-fi</b><br>
+        <br>26 jul 2021</p>
         <br>
-      </p>
-        26 jul 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            Top 10 Discord Music Bots Free 2021 Best
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                Top 10 Discord Music Bots Free 2021 Best
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/funker.png">
-        <img src="/art 2021/funker.png">
-      </a><br>
-      <p>
-        <b>funker</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/funker.png"><img src="/art 2021/funker.png"></a><br>
+        <p><b>funker</b><br>
+        <br>6 jul 2021</p>
         <br>
-      </p>
-        6 jul 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            Friday Night Funkin more like Tuesday Night ... .....
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                Friday Night Funkin more like Tuesday Night ... .....
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/wackydynamicpose.png">
-        <img src="/art 2021/wackydynamicpose.png">
-      </a><br>
-      <p>
-        <b>wacky dynamic pose</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/wackydynamicpose.png"><img src="/art 2021/wackydynamicpose.png"></a><br>
+        <p><b>wacky dynamic pose</b><br>
+        <br>4 jun 2021</p>
         <br>
-      </p>
-        4 jun 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            i didn't know what else to name this
-            <br>
-            here's a slightly new design pretty neat
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                i didn't know what else to name this
+                <br>
+                here's a slightly new design pretty neat
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/pizzacube_new-banner.png">
-        <img src="/art 2021/thumbnail---pizzacube_new-banner.png">
-      </a><br>
-      <p>
-        <b>new (pizzacube/newgrounds) banner</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/pizzacube_new-banner.png"><img src="/art 2021/thumbnail---pizzacube_new-banner.png"></a><br>
+        <p><b>new (newgrounds) banner</b><br>
+        <br>17 may 2021</p>
         <br>
-      </p>
-        17 may 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            actually i spent too long on this to not post it
-            <br>
-            should've taken half an hour but it took about 4 hahaha anyway
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                actually i spent too long on this to not post it
+                <br>
+                should've taken half an hour but it took about 4 hahaha anyway
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/bowser_redraw_2021.png">
-        <img src="/art 2021/bowser_redraw_2021.png">
-      </a><br>
-      <p>
-        <b>bowser redraw (2018/2021)</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/bowser_redraw_2021.png"><img src="/art 2021/bowser_redraw_2021.png"></a><br>
+        <p><b>bowser redraw (2018/2021)</b><br>
+        <br>9 may 2021</p>
         <br>
-      </p>
-        9 may 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            redrew this bowser from 2018 (right) it was meant as a sketch and then i spent way long on doing shading for it
-            <br>
-            looks a bit off to me still but i like how i did the shading at least
-            <br>
-            bowser is hard to draw 👍
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                redrew this bowser from 2018 (right) it was meant as a sketch and then i spent way long on doing shading for it
+                <br>
+                looks a bit off to me still but i like how i did the shading at least
+                <br>
+                bowser is hard to draw 👍
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/picoday2021.png">
-        <img src="/art 2021/picoday2021.png">
-      </a><br>
-      <p>
-        <b>happy pico day!</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/picoday2021.png"><img src="/art 2021/picoday2021.png"></a><br>
+        <p><b>happy pico day!</b><br>
+        <br>1 may 2021</p>
         <br>
-      </p>
-        1 may 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            a little thing that i did before i go to sleep today, couldn't comfortably just make nothing so figured this isn't a sketch (a when you submit to newgrounds thing btw, you decide if it is or not as to not flood up the art portal) but i'm not fully sure
-            <br>
-            eh. i'll be fine. was nice to get something out for it at least. merry pico day 2021 :)
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                a little thing that i did before i go to sleep today, couldn't comfortably just make nothing so figured this isn't a sketch (a when you submit to newgrounds thing btw, you decide if it is or not as to not flood up the art portal) but i'm not fully sure
+                <br>
+                eh. i'll be fine. was nice to get something out for it at least. merry pico day 2021 :)
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art -->
-    <arty>
-     <div class="myDiv">
-      <a href="/art 2021/croix compilation.png">
-        <img src="/art 2021/croix compilation.png">
-      </a><br>
-      <p>
-        <b>croix compilation</b>
+        </label>
+      </div>
+    <!-- art -->
+      <div class="myDiv">
+        <a href="/art 2021/croix compilation.png"><img src="/art 2021/croix compilation.png"></a><br>
+        <p><b>croix compilation</b><br>
+        <br>1 may 2021</p>
         <br>
-      </p>
-        1 may 2021
-      <!-- lil collapsible -->
-       <br>
-       <br>
-      <label class="wrap-collapsible">
+        <label class="wrap-collapsible">
         <input id="collapsible" class="toggle" type="checkbox">
-          <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <p></p>
-            <center><b>Description</b></center><br>
-            <!-- THE DESCRIPTION AREA -->
-            <p>
-            i figured i should do this lol, here an oc sona whatever you would call it since i haven't had one i'd actually use in a really long time
-            <br>
-            this is croix
-            <br>
-            okay so the name i wanted it to be like, crex but not crex and the only thing i could think of is croix, named after la croix but you pronounce the x.
-            <br>
-            if you have any other name ideas please let me know haha
-            </p>
-            <!-- THE DESCRIPTION AREA -->
+        <label class="lbl-toggle" type="checkbox" for="collapsible"></label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p></p>
+              <center><b>Description</b></center><br>
+              <p>
+                i figured i should do this lol, here an oc sona whatever you would call it since i haven't had one i'd actually use in a really long time
+                <br>
+                this is croix
+                <br>
+                okay so the name i wanted it to be like, crex but not crex and the only thing i could think of is croix, named after la croix but you pronounce the x.
+                <br>
+                if you have any other name ideas please let me know haha
+              </p>
+            </div>
           </div>
-        </div>
-      </label> <!-- next is for myDiv -->
-     </div>
-    </arty>
-<!-- art endpoint -->
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
+        </label>
+      </div>
+    <!-- art endpoint -->
+    <br><br><br><br><br><br>
     </center>
   </body>
 </html>
