@@ -18,6 +18,9 @@ img {
     max-height: 650px;
     image-rendering: pixelated;
 }
+.backbutton {
+    color: #c1c6e3;
+}
 
 /* ORIGINAL STYLE.CSS HERE!!!!!!!! */
 /* ORIGINAL STYLE.CSS HERE!!!!!!!! */
@@ -64,7 +67,7 @@ body {
 /* links stuff W/ CUSTOM COLOR BTW */
 
 a {
-    color: #c1c6e3;
+    color: white;
     text-decoration: none;
     animation: dehover-anim 0.15s ease-out;
     animation-iteration-count: 1;
