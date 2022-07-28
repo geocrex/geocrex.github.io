@@ -16,6 +16,7 @@ img {
     max-width: 100%;
     width: auto;
     max-height: 650px;
+    image-rendering: pixelated;
 }
 
 /* ORIGINAL STYLE.CSS HERE!!!!!!!! */
