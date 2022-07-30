@@ -11,7 +11,7 @@ body {
 img {
     display: flex;
     justify-content: center;
-    padding: 0px;
+    margin-top: 10px;
     border-radius: 0px;
     max-width: 550px;
     max-width: 100%;
