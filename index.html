@@ -26,33 +26,7 @@
         width: 0;  /* Remove scrollbar space */
         background: transparent;  /* Optional: just make scrollbar invisible */
       }
-      /* --- links stuff + a couple anims --- */
-      a {
-        color: white;
-        text-decoration: none;
-        animation: dehover-anim 0.15s ease-out;
-        animation-iteration-count: 1;
-        animation-fill-mode:forwards;
-      }
-      @keyframes dehover-anim {
-        0%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
-        100%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
-      }
-      a:visited {
-        color: white;
-        text-decoration: none;
-      }
-      a:hover, a:active, a:focus {
-        color: white;
-        text-decoration: none;
-        animation: hover-anim 0.04s ease-in;
-        animation-iteration-count: 1;
-        animation-fill-mode:forwards;
-      }
-      @keyframes hover-anim {
-          0%   { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
-          100%   { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
-      }
+      /* --- floating title stuff - a couple anims --- */
       @keyframes float {
           0% {
             transform: translateY(0px);
@@ -64,7 +38,7 @@
             transform: translateY(0px);
           }
       }
-      /* --- SECTIONS / FEATURED --- */
+      /* --- SECTIONS + FEATURED --- */
       .featured {
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
@@ -74,7 +48,27 @@
         width: 0;  /* Remove scrollbar space */
         background: transparent;  /* Optional: just make scrollbar invisible */
       }
-      /* --- how the image look --- */
+      .windowframe-lite {
+        left: 0;
+        background: repeating-linear-gradient(45deg, rgba(25,40,55,0.35) 15%, rgba(25,40,0,0.35) 15%, rgba(25,40,55,0.35) 10%, rgba(70,85,100,0.35) 45%, rgba(70,85,100,0.35) 55%, rgba(25,40,55,0.35) 70%);
+        background-attachment: fixed;
+        background-clip: padding-box;
+        border-radius: 10px;
+        box-shadow: inset 0 0 1.65px 1px rgba(246,246,247,0.14), inset 0 0 4px 2.25px rgba(0,0,0,0.02), 0 3px 9px rgba(0,0,0,0.26), inset 0 1.5px 6.35px rgba(246,246,247,0.16);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        -moz-backdrop-filter: blur(16px);
+        border: 1.5px solid rgba(2,3,4,0.26);
+        max-width: 504px;
+        overflow: hidden;
+        transform: translateX(0) translateY(0);
+        z-index: 0;
+      }
+      .windowframe-lite:target {
+        box-shadow: inset 0 1px 0.35px 2px rgba(255,255,255,0.22) inset 0 3px 0.35px 2px rgba(0,0,0,0.22) 0 6px 20px rgba(0,0,0,0.35);
+        z-index: 1;
+      }
+      /* --- how the featured image looks --- */
       .featured img {
         display: flex;
         justify-content: center;
@@ -96,26 +90,6 @@
         width: 100%;
         height: auto;
         transition: transform .2s; /* Animation */
-      }
-      .windowframe-lite {
-        left: 0;
-        background: repeating-linear-gradient(45deg, rgba(25,40,55,0.35) 15%, rgba(25,40,0,0.35) 15%, rgba(25,40,55,0.35) 10%, rgba(70,85,100,0.35) 45%, rgba(70,85,100,0.35) 55%, rgba(25,40,55,0.35) 70%);
-        background-attachment: fixed;
-        background-clip: padding-box;
-        border-radius: 10px;
-        box-shadow: inset 0 0 1.65px 1px rgba(246,246,247,0.14), inset 0 0 4px 2.25px rgba(0,0,0,0.02), 0 3px 9px rgba(0,0,0,0.26), inset 0 1.5px 6.35px rgba(246,246,247,0.16);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        -moz-backdrop-filter: blur(16px);
-        border: 1.5px solid rgba(2,3,4,0.26);
-        max-width: 504px;
-        overflow: hidden;
-        transform: translateX(0) translateY(0);
-        z-index: 0;
-      }
-      .windowframe-lite:target {
-        box-shadow: inset 0 1px 0.35px 2px rgba(255,255,255,0.22) inset 0 3px 0.35px 2px rgba(0,0,0,0.22) 0 6px 20px rgba(0,0,0,0.35);
-        z-index: 1;
       }
       /* --- MY DIVS --- */
       .myDiv { 
@@ -153,7 +127,7 @@
         animation-delay: 0s;
         padding-left: 100%;
       }
-      /* --- I FORGOT SOME KINDA ANIMAAATION NVM STILL GOING RIGHT --- */
+      /* --- ANIMATION, STILL GOING RIGHT --- */
       @keyframes marquee1 {
         0%   { transform: translate(0, 0); }
         100% { transform: translate(-100%, 0); }
@@ -180,7 +154,6 @@
       .socials-box {
         display: inline-block;
         padding: 0px 0px 0px 24px;
-        float: center;
       }
       .socials-box span {
         margin-right: 24px;
@@ -200,7 +173,6 @@
         text-align: left;
       }
       .globes {
-        display: inline-block;
         float: center;
       }
       .globes span {
@@ -208,13 +180,11 @@
         padding: 12px 0px 12px 0px;
       }
       .globes span img {
-        display: inline-block;
         float: left;
         justify-content: center;
         border-radius: 0px;
       }
       .globes span p {
-        display: inline-block;
         float: left;
         margin: 0px 12px 6px 12px;
         text-align: center;
@@ -311,7 +281,6 @@
               <img src="color_earth.gif" alt="globe gif" height="20" width="20">
             </span>
           </div>
-          <br>
           <div class="pages">
             <span style="display: inline-block;">
               <p><a href="/updates.html">📝 &nbsp;updates</a></p>
@@ -461,6 +430,10 @@
                   </div>
                   <br>
                   <div class="featured-img">
+                    <a href="/art 2022/picosketch4picoday2022.png"><img src="/art 2022/THUMBNAIL---picosketch4picoday2022.png"></a>
+                  </div>
+                  <br>
+                  <div class="featured-img">
                     <a href="/art 2022/gexesis.png"><img src="/art 2022/thumbnail---gexesis.png"></a>
                   </div>
                   <br>
@@ -476,7 +449,7 @@
       <br><br><br><br><br><br>
       <footer>
         <p style="font-size:12px;">started 13 feb 2021</p>
-        <p style="font-size:12px;">last updated 30 jul 2022</p>
+        <p style="font-size:12px;">last updated 31 jul 2022</p>
         <p style="font-size:12px;">version 4.0 beta (aurora)</p>
       </footer>
       </div>
