@@ -10,7 +10,6 @@ body {
 
 .pages {
     display: inline-block;
-    float: center;
     max-width: 950px;
 }
  .pages span {
@@ -19,13 +18,11 @@ body {
 }
  .pages span img {
     display: inline-block;
-    float: left;
     justify-content: center;
     border-radius: 0px;
 }
  .pages span p {
     display: inline-block;
-    float: left;
     margin: 0px 24px 6px 24px;
     text-align: center;
 }

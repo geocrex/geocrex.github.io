@@ -21,6 +21,7 @@ img {
 /* ORIGINAL STYLE.CSS HERE!!!!!!!! */
 /* ORIGINAL STYLE.CSS HERE!!!!!!!! */
 body {
+    background-image: url("background.png");
     background-repeat: repeat;
     background-attachment: fixed;
     background-color: black;
@@ -31,7 +32,6 @@ body {
 
 .pages {
     display: inline-block;
-    float: center;
     max-width: 950px;
 }
  .pages span {
@@ -40,13 +40,11 @@ body {
 }
  .pages span img {
     display: inline-block;
-    float: left;
     justify-content: center;
     border-radius: 0px;
 }
  .pages span p {
     display: inline-block;
-    float: left;
     margin: 0px 24px 6px 24px;
     text-align: center;
 }
@@ -59,7 +57,7 @@ body {
     font-style: normal;
 }
 
-/* links stuff W/ CUSTOM COLOR BTW */
+/* links stuff */
 
 a {
     color: white;
@@ -341,7 +339,7 @@ input[type='checkbox'] {
     border: solid rgba(255,255,255,0.75);
     border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 6px;
+    padding: 5px;
     border-radius: 3px;
 }
 
