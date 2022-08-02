@@ -16,21 +16,25 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicons -->
     <style>
-      /* --- background!!! --- */
+      /* --- Background!!! --- */
       body {
         background-image: url("background.png");
       }
+      /* --- HIDIN SCROLLBARS --- */
+      div {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      ::-webkit-scrollbar {
+        display: none;
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+      }
       /* --- floating title stuff anims --- */
       @keyframes float {
-          0% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-3px);
-          }
-          100% {
-            transform: translateY(0px);
-          }
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-3px); }
+        100% { transform: translateY(0px); }
       }
       /* --- SECTIONS + FEATURED --- */
       .featured {
@@ -108,7 +112,7 @@
         text-align: center;
         border-radius: 10px;
       }
-      /* --- GOIN RIGHT NEWS --- */
+      /* --- GOIN RIGHT NEWS + UPDATES --- */
       .goingright {
         max-width: 650px;
         white-space: nowrap;
@@ -144,7 +148,7 @@
            flex-direction:column;
         }
       }
-      /* --- UM... the rest of it i guess --- */
+      /* --- Um the rest of it i guess --- */
       .socials-box {
         display: inline-block;
         padding: 0px 0px 0px 24px;
