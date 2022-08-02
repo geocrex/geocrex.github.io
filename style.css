@@ -1,5 +1,5 @@
 body {
-    background-image: url("background.png");
+    background-image: url("/special-backgrounds/updatepost_bg.png");
     background-repeat: repeat;
     background-attachment: fixed;
     background-color: black;
@@ -12,22 +12,22 @@ body {
     display: inline-block;
     max-width: 950px;
 }
- .pages span {
+.pages span {
     float: center;
     padding: 6px 0px 6px 0px;
 }
- .pages span img {
+.pages span img {
     display: inline-block;
     justify-content: center;
     border-radius: 0px;
 }
- .pages span p {
+.pages span p {
     display: inline-block;
     margin: 0px 24px 6px 24px;
     text-align: center;
 }
 
-/* POP MAGIC */
+/* --- POP MAGIC --- */
 @font-face {
     font-family: 'GauFontPopMagic';
     src:url('GauFontPopMagic.ttf.woff') format('woff'), url('GauFontPopMagic.ttf.svg#GauFontPopMagic') format('svg'), url('GauFontPopMagic.ttf.eot'), url('GauFontPopMagic.ttf.eot?#iefix') format('embedded-opentype');
@@ -35,8 +35,7 @@ body {
     font-style: normal;
 }
 
-/* links stuff */
-
+/* --- links stuff --- */
 a {
     color: white;
     text-decoration: none;
@@ -63,12 +62,26 @@ a:hover, a:active, a:focus {
     0% { text-shadow: 0px -2px 5px rgba(255,255,255, 0); }
     100% { text-shadow: 0px 0.75px 5px rgba(255,255,255, 0.75); }
 }
-/*  FOR LISTS */
+
+/* --- FOR LISTS + POSTS --- */
+.myDivPost {
+    padding: 0px 20px 20px 20px;
+    max-width: 1100px;
+    float: center;
+    text-align: left;
+    line-height: 22px;
+}
 .listingDiv {
     padding: 0px 20px 20px 20px;
     max-width: 500px;
     float: center;
     text-align: left;
+}
+.myDivPost img, .listingDiv img {
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 0px;
+    max-width: 100%;
 }
 long-words {
     overflow-wrap: break-word;
@@ -87,8 +100,9 @@ long-words {
     word-break: break-word;
     white-space: pre-line;
 }
-/* WINDOWS */
-/* background-filter usually unsupported lol */
+
+/* --- WINDOWS --- */
+/* --- background-filter could be unsupported lol --- */
 .windowframe {
     left: 0;
     background: repeating-linear-gradient(45deg, rgba(25,40,55,0.35) 35%, rgba(25,40,0,0.35) 35%, rgba(25,40,55,0.35) 30%, rgba(70,85,100,0.35) 65%, rgba(70,85,100,0.35) 75%, rgba(25,40,55,0.35) 90%);
@@ -115,7 +129,8 @@ long-words {
     margin-left: 9px;
     margin-top: 8px;
 }
-/* TEXTBOX */
+
+/* --- TEXTBOX --- */
 .textbox {
     left: 6px;
     right: 6px;
@@ -129,7 +144,8 @@ long-words {
     position: absolute;
     z-index: 1;
 }
-/* ZOOM ANIMS */
+
+/* --- ZOOM ANIM TEMPLATES --- */
 .zoomanimlite:hover, .zoomanimlite:active, .zoomanimlite:focus {
     transform: scale(1.05); /* (105% zoom) */
     -ms-transform: scale(1.05); /* IE (lol) */
@@ -148,8 +164,9 @@ long-words {
 .zoomanim {
     transition: transform .55s; /* Animation */
 }
-/*  collapsibles stuff */
-/*  https://www.digitalocean.com/community/tutorials/css-collapsible thanks */
+
+/* --- collapsibles stuff --- */
+/* --- https://www.digitalocean.com/community/tutorials/css-collapsible thanks --- */
 .wrap-collapsible {
     margin-bottom: 20px 0;
 }
@@ -225,7 +242,7 @@ input[type='checkbox'] {
     padding: 2px 16px 10px;
 }
 
-/* THUMBNAILS WITH CAPTIONS */
+/* --- THUMBNAILS WITH CAPTIONS --- */
 /* TEMPLATE HTML:
 <div class="thumb">
   <span>
@@ -235,7 +252,6 @@ input[type='checkbox'] {
   </span>
 </div>
 */
-
 .thumb {
     display: grid;
     padding: 0px 32px;
@@ -267,7 +283,7 @@ input[type='checkbox'] {
     -moz-transform: scale(1.05); /* Firefox */
 }
 
-/* CAROUSEL HERE */
+/* --- CAROUSEL HERE --- */
 .carousel {
     position: relative;
     max-width: 500px;
@@ -279,7 +295,6 @@ input[type='checkbox'] {
     height: auto;
     display: block;
 }
-
 .carousel-item {
     position: absolute;
     top: 0; bottom: 0;
@@ -291,7 +306,6 @@ input[type='checkbox'] {
     display: grid;
     margin-top: 4px;
 }
-
 .carousel-item img {
     float: center;
     justify-content: center;
@@ -302,7 +316,6 @@ input[type='checkbox'] {
     justify-content: center;
     margin-bottom: -5px;
 }
-
 .carousel-item img:hover, .carousel-item img:active, .carousel-item img:focus {
     transform: scale(1.05); /* (105% zoom) */
     -ms-transform: scale(1.05); /* IE (lol) */
@@ -320,7 +333,6 @@ input[type='checkbox'] {
     padding: 5px;
     border-radius: 3px;
 }
-
 .arrow-prev {
     left:-20px;
     position:absolute;
@@ -328,17 +340,12 @@ input[type='checkbox'] {
     transform:translateY(-50%) rotate(135deg);
     margin-left: 30px;
 }
-
 .arrow-next {
     right:-20px;
     position:absolute;
     top: 60px;
     transform:translateY(-50%) rotate(-45deg);
     margin-right: 30px;
-}
-
-.light {
-    color:white;
 }
 
 /*Select every element*/
