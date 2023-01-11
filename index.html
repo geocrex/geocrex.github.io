@@ -30,12 +30,6 @@
         width: 0;  /* Remove scrollbar space */
         background: transparent;  /* Optional: just make scrollbar invisible */
       }
-      /* --- floating title stuff anims --- */
-      @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-3px); }
-        100% { transform: translateY(0px); }
-      }
       /* --- SECTIONS + FEATURED --- */
       .featured {
         -ms-overflow-style: none;  /* IE and Edge */
@@ -202,10 +196,17 @@
     <center>
       <br>
       <div class="content">
-        <main> <!-- i dont think this does anything -->
-          <p style="font-size:30px;transform: scaleY(1.22);font-family: 'GauFontPopMagic'; letter-spacing: -3px; animation: float 9s ease-in-out infinite; animation-delay: 0s;">
-            <b>Kinsazo</b>
-          </p>
+        <main>
+          <div class="myDivPost" style="height: 80px; max-width: 650px; animation: float 6s ease-in-out infinite; animation-delay: 0s;">
+            <p style="font-size:30px; font-family: 'GauFontPopMagic'; letter-spacing: -3px; float: left;">
+              <b>Kinsazo</b>
+            </p>
+            <p style="font-size:18px; text-align: right; float: right; transform: translateY(11px);">
+              <fhdgfd style="opacity: 0.85; font-family: 'GauFontPopMagic'; transform: scaleY(1.22);">Home</fhdgfd>
+              <br>
+              <fhdgfd style="font-size: 16px; opacity: 0.65; text-decoration: underline;">&lt; back</fhdgfd>
+            </p>
+          </div>
           <div class="goingright">
             <a href="/updates/2022-02-13-one-year-anniversary.html">
               <p>📝 LATEST UPDATE: 13/2/22 - <u>"ONE YEAR ANNIVERSARY!!!"</u></p>
@@ -449,7 +450,7 @@
       <br><br><br><br><br><br>
       <footer>
         <p style="font-size:12px;">started 13 feb 2021</p>
-        <p style="font-size:12px;">last updated 27 nov 2022</p>
+        <p style="font-size:12px;">last updated 11 jan 2023</p>
         <p style="font-size:12px;">version 4.0 beta (aurora)</p>
       </footer>
       </div>
